@@ -1,0 +1,60 @@
+{
+  "ZdkrugHREK": {
+    "shipName": "Falcon 9",
+    "shipId": "ZdkrugHREK",
+    "shipInfo": [
+      {
+        "make": "Astrodyne",
+        "model": "Obstacle",
+        "year": 2604,
+        "color": "Cosmic Blue",
+        "usage": "Exploration"
+      }
+    ],
+    "registryData": {
+      "regPlate": "M31JJ936YR1P",
+      "issuedYear": 2604,
+      "expiration": 2608,
+      "status": "expired"
+    },
+    "owerInfo": {
+      "name": "John Doe",
+      "ownerId": "E0000000"
+    },
+    "history": [
+      {
+
+      }
+    ]
+  }, 
+  "uacfMFwmhn": {
+    "shipName": "Falcon 8",
+    "shipId": "uacfMFwmhn",
+    "shipInfo": [
+      {
+        "make": "Astrodyne",
+        "model": "Obstacle",
+        "year": 2590,
+        "color": "Nebula Pink",
+        "usage": "Exploration"
+      }
+    ],
+    "registryData": {
+      "regPlate": "M31JJ936YR1P",
+      "issuedYear": 2599,
+      "expiration": 2607,
+      "status": "expired"
+    },
+    "owerInfo": {
+      "name": "John Doe",
+      "ownerId": "E0000000"
+    },
+    "history": [
+      {
+        "incDate": 2607,
+        "incType": "Collision",
+        "incDetails": "Owner crashed falcon 8 into a tree, Totaled."
+      }
+    ]
+  }
+}

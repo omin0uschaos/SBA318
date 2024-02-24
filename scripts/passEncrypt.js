@@ -14,9 +14,10 @@ async function comparePassword(plaintextPassword, hash) {
 async function processPassword() {
     let ogpass = "password123";
     let pass = "password123";
+    let hashed = "$2b$10$ZAeveE9jZMappZqa3htHduFy1KQdqRplgrPJQR2SBXRcXWOC4XsEq"
     pass = await hashPassword(pass);
     console.log(pass);
-    comparePassword(ogpass, pass);
+    comparePassword(ogpass, hashed);
 }
 
 processPassword();

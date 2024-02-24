@@ -1,0 +1,38 @@
+{
+  "E0000000": {
+    "username": "Johndoe",
+    "password": "$2b$10$ZAeveE9jZMappZqa3htHduFy1KQdqRplgrPJQR2SBXRcXWOC4XsEq",
+    "licenseData": {
+      "licenseId": "E0000000",
+      "licenseType": "A",
+      "issuedYear": 2599,
+      "expiration": 2609,
+      "status": "valid"
+    },
+    "personData": {
+      "name": "John Doe",
+      "Address": "555 Washington Dr., New LA, CA Earth",
+      "Birthdate": "GlaLéo, Perigis 2 L1250.4",
+      "photoId": "546581638484",
+      "email": "johndoe@email.com",
+      "phone": "555-321-0000"
+    },
+    "shipsOwned": [
+      {
+        "shipName": "Falcon 9",
+        "shipId": "ZdkrugHREK"
+      },
+      {
+        "shipName": "Falcon 8",
+        "shipId": "uacfMFwmhn"
+      }
+    ],
+    "history": [
+      {
+        "incDate": 2607,
+        "incType": "Collision",
+        "incDetails": "User crashed falcon 8 into a tree."
+      }
+    ]
+  }
+}
