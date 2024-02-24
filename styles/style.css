@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    background-image: url("../images/deep_space.jpg");
+    background-size:auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 100px;
+    background-color: rgba(127, 255, 212, 0.422);
+    height: 100px;
+    font-family: sans-serif;
+}
+nav a{
+    position:absolute;
+    text-decoration: none;
+    color: beige;
+}
+nav a:hover{
+    color: rgb(193, 130, 252);
+    transform: rotate(20deg);
+}
+#company-logo{
+    width: 200px;
+    text-align: center;
+}

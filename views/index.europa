@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intergalactic Sip Registry</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <nav>
+        <div id="company-logo">LOGO</div>
+        <div><a href="#">Home</a></div>
+        <div><a href="#">Register User</a></div>
+        <div><a href="#">Register Ship</a></div>
+        <div><a href="#">Ship Search</a></div>
+        <div><a href="#">Login</a></div>
+
+    </nav>
+    <main>
+
+        <h1>Welcome to the ISR</h1>
+
+
+        <form action="">
+
+            <input type="text" placeholder="ship-name" name="ship-name">
+            <select name="spaceship-maker" id="ship-make-select">
+                #shipmaker#
+            </select>
+
+        </form>
+    </main>
+    
+
+</body>
+</html>
