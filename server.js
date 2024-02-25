@@ -41,8 +41,8 @@ app.get('/', (req, res)=>{
         homelink:"/",
         contactlink:"/contact",
         title: "Intergalactic Ship Registry",
-        subTitle: "Welcome to the ISR",
-        content: `Europa is a place that holds unilimited possibilities. Please read more about it below. <br /><br />`
+        subTitle: "Welcome to the Intergalactic Ship Registry (ISR)",
+        content: `Welcome to the Intergalactic Ship Registry (ISR) <br /><br />`
     };
     res.render("index", options);
 })

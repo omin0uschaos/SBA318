@@ -82,7 +82,7 @@
       "etherMachinesCo": {
         "manufacturerName": "Ether Machines Co (EMC)",
         "location": "Ganymede",
-        "models": ["X", "C-Carrier", "StarFam", "UtilityMaster", "SpaceTaxi", "CargoGiant", "ExoExplorer", "MediWing", "Enforcer"],
+        "models": ["X", "C-Carrier", "StarFam", "Mass", "SpaceTaxi", "Giant", "ExoExplorer", "MediWing", "Enforcer"],
         "extColors": ["Obsidian Black", "Comet Silver", "Galactic Grey", "Meteorite Maroon", "Skydust Blue", "Asteroid Grey", "Moonstone White", "Nebula Navy", "Solar Silver", "Eclipse Black", "Cosmic Copper"],
         "intColors": ["Platinum", "Nebula Blue", "Supernova White", "Cosmic Cream", "Orbit Orange", "Solar Flare Red", "Galaxy Green", "Yellow Comet", "Deep Space Black", "Quasar Quartz", "Aurora Accents", "Crystal Cave", "Healing Green", "Vigilant Violet"],
         "description": "Ether Machines Co (EMC) stands at the forefront of interstellar exploration and transportation technologies. With a visionary approach inspired by the seamless integration of form and function, EMC crafts spaceships that are not only vessels for travel but also embodiments of innovation and design excellence. Drawing inspiration from the robust, iconic forms of the Iron Giant and the sleek efficiency of Capsule Corp's tech, EMC combines strength with versatility, encapsulating the spirit of adventure that defines the cosmos. Every EMC ship is a testament to the company's commitment to pushing the boundaries of what's possible, offering a range of models designed to cater to the diverse needs of the interstellar community."

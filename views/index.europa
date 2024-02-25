@@ -18,9 +18,33 @@
     </nav>
     <main>
 
-        <h1>#sub-title#</h1>
+        <h1 id="page-header">#sub-title#</h1>
 
-        <div>#content#</div>
+  <section>
+        <h4>Mission Statement:</h4>
+        <p>The Intergalactic Ship Registry (ISR) is dedicated to pioneering the frontier of space navigation and ownership. Our mission is to facilitate seamless interstellar travel, uphold the highest standards of spacecraft registration, and ensure safe, lawful, and efficient operation throughout the cosmos.</p>
+
+        <h4>History:</h4>
+        <p>Founded in the year 2084 amidst the booming era of space colonization, the ISR emerged as a crucial entity in the wake of interplanetary exploration and commercialization. Recognizing the need for a regulatory body to manage the burgeoning fleet of spacecraft, the United Earth Coalition and Martian Trade Alliance co-established the ISR. The organization rapidly evolved from a simple registry into a comprehensive agency overseeing registration, compliance, safety inspections, and interstellar navigation laws.</p>
+
+        <h4>Core Functions:</h4>
+        <ul>
+            <li><strong>Spacecraft Registration:</strong> Assigning unique identifiers to every vessel, ensuring legal ownership and facilitating easier identification across the galaxy.</li>
+            <li><strong>Navigation & Communication Regulations:</strong> Establishing and enforcing guidelines for interstellar travel, including communication protocols between spacecraft and stations.</li>
+            <li><strong>Safety Inspections:</strong> Conducting rigorous inspections to certify that all registered vessels meet the universal safety and environmental standards.</li>
+            <li><strong>Legal & Compliance:</strong> Overseeing the adherence to galactic treaties and laws, including the resolution of disputes related to space travel and commerce.</li>
+        </ul>
+
+        <h4>Innovations:</h4>
+        <ul>
+            <li><strong>Quantum Beacon Network (QBN):</strong> A proprietary navigation system that provides real-time, galaxy-wide location tracking and communication, ensuring ships are never lost in the vastness of space.</li>
+            <li><strong>Eco-Friendly Propulsion Registry (EFPR):</strong> An initiative encouraging the adoption of sustainable propulsion technologies by offering incentives for ships that meet environmental standards.</li>
+        </ul>
+
+        <h4>Future Vision:</h4>
+        <p>The ISR is committed to supporting the expansion of humanity and alien civilizations into the outer reaches of the universe. By continuously innovating and adapting to the challenges of intergalactic travel, the ISR aims to unlock the full potential of space exploration and commerce, ensuring the cosmos is accessible and safe for all.</p>
+
+  </section>
 
     </main>
     <footer>
