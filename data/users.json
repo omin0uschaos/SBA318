@@ -70,5 +70,26 @@
         "incDetails": "User crashed falcon 8 into a tree."
       }
     ]
+  },
+  "Q9729079": {
+    "username": "1610moose",
+    "password": "$2b$10$z5Bc0Wbpgseyc52lJcoFyO8QHI5FWNiQovSTBlz9Uxu.3.aIdh6G6",
+    "licenseData": {
+      "licenseId": "Q9729079",
+      "licenseType": "C",
+      "issuedYear": 2024,
+      "expiration": 2034,
+      "status": "valid"
+    },
+    "personData": {
+      "name": "",
+      "Address": "",
+      "Birthdate": "",
+      "photoId": "",
+      "email": "isjoecool@yahoo.com",
+      "phone": ""
+    },
+    "shipsOwned": [],
+    "history": []
   }
 }

@@ -12,9 +12,8 @@
         <div><a href="/">Home</a></div>
         <div><a href="/register">Register User</a></div>
         <div><a href="#">Register Ship</a></div>
-        <div><a href="#">Ship Search</a></div>
+        <div><a href="/ships/search">Ship Search</a></div>
         <div><a href="/login">Login</a></div>
-
     </nav>
     <main>
 

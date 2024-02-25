@@ -77,3 +77,8 @@ form button{
     border: 0px ;
 
 }
+
+#search-result-ul{
+    list-style-type: none;
+    padding:0;
+}
