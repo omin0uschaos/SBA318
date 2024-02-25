@@ -1,0 +1,138 @@
+{
+    "vorpyxion": {
+      "manufacturerName": "Vorpyxion",
+      "location": "Callisto",
+      "models": ["Pulsar", "Harmony", "Vector", "Galaxy-Cab", "Void-Explorer"],
+      "extColors": ["Cosmic Silver", "Asteroid Grey", "Meteorite White", "Void Black", "Planetary Blue"],
+      "intColors": ["Starlight White", "Cozy Earth", "Tranquil Sea", "Vibrant Violet", "Discovery Orange", "Exploration Teal"],
+      "description": "Vorpyxion is an avant-garde spaceship manufacturer, renowned for its innovative designs and advanced propulsion technologies. Established in the shadow of a colossal asteroid orbiting Callisto, Jupiter's second-largest moon, Vorpyxion harnesses the unique minerals and gravitational forces of its base to craft spaceships that are both powerful and aesthetically striking. Their fleet is designed to cater to a wide array of space travel needs, from interstellar exploration to commercial transport, embodying the spirit of adventure and the relentless pursuit of beyond."
+    },
+    "quasitrek": {
+        "manufacturerName": "Quasitrek",
+        "location": "New Tharsis",
+        "models": ["Viyago", "Odyssey", "Celeste", "Atlas", "Quantus", "Terra-Titan", "Star-Seeker"],
+        "extColors": ["Cosmic Silver", "Nebula Blue", "Earth Brown", "Sky Blue", "Taxi Yellow", "Space Black", "Asteroid Gray", "Solar Orange", "Nova White", "Eclipse Black", "Industrial Steel", "Terra Green", "Void Black", "Comet Red"],
+        "intColors": ["Lunar White", "Martian Red", "Venusian Gold", "Mercury Silver", "Gaian Green", "Oceanic Blue", "Sunset Orange", "Earthrise Gray"],
+        "description": "Quasitrek is a vanguard of interstellar mobility, crafting spaceships that embody the zenith of human ingenuity and the relentless pursuit of exploration. With a mission to make the cosmos accessible to all, Quasitrek draws inspiration from Earth's rich tapestry of cultures, combining ancient aesthetics with futuristic technology. Their ships are not merely vessels; they are mobile sanctuaries that reflect the diversity and resilience of human culture."
+      },
+      "nebulairix": {
+        "manufacturerName": "Nebulairix",
+        "location": "Triton",
+        "models": ["Solarflare", "Galaide", "Comet", "Packmule", "Moonwalker"],
+        "extColors": ["Comet White / Solar Orange", "Deep Space Black / Nebula Pink", "Icy Blue/Starlight Silver"],
+        "intColors": ["Warm Nebula Pink / Soft Starlight", "Deep Galactic Blue / Aurora Green", "Solar Flare Orange / Cosmic Violet"],
+        "description": "\"Forge Ahead, Embrace the Cosmos.\" Nebulairix commits to pushing the boundaries of space travel by synthesizing elemental contrasts, embodying the fiery passion for discovery and the serene wisdom of navigation through the cosmos."
+      },
+      "galaxior": {
+        "manufacturerName": "Galaxior",
+        "location": "Titan",
+        "models": ["Void-Riff", "Shredder", "Choir", "Nebulass", "Drifter", "Loader", "Eclipsorer"],
+        "extColors": ["Dark Matter Black", "Supernova Silver", "Nebula Blue"],
+        "intColors": ["Quantum Red", "Pulsar Purple", "Singularity Silver"],
+        "description": "Galaxior stands at the forefront of interstellar innovation, embodying bold, unapologetic, and pioneering spirit. Born from the creative minds aboard the \"Lunaris Forge\" – a state-of-the-art space station orbiting the enigmatic and mineral-rich moon of Titan, Saturn's largest satellite – Galaxior crafts spaceships that are not just modes of transportation but declarations of identity and ambition."
+      },
+      "astrodyne": {
+        "manufacturerName": "Astrodyne",
+        "location": "Ceres",
+        "models": ["Obstacle", "Orbitron OX", "AsteriXpress", "Comet-Cab", "StarStream", "Quester"],
+        "extColors": ["Cosmic Blue", "Asteroid Grey", "Nebula Pink", "Comet Red", "Solar Flare Orange", "Aurora Green", "Pulsar Purple", "Black Hole Matte"],
+        "intColors": ["Starlight Silver", "Lunar White", "Space Station Silver", "Industrial Chrome", "Galaxy Green", "Sunrise Gold", "Cosmic Grey", "Quantum Quartz", "Photon White"],
+        "description": "Astrodyne is a pioneering spaceship manufacturer that has established its base on Ceres, the largest asteroid in the asteroid belt between Mars and Jupiter. With its headquarters deeply embedded in the rich mineralogy of Ceres, Astrodyne harnesses advanced asteroid mining technologies to create spacecraft materials that are both lightweight and incredibly durable. The company specializes in a range of spacecraft designed to meet the diverse needs of the solar system's inhabitants and explorers, embodying a philosophy of innovation, exploration, and reliability. Astrodyne's designs are inspired by the fusion of futuristic aesthetics and functional elegance, reminiscent of the golden era of space-themed animation, offering a nostalgic yet forward-thinking approach to space travel."
+      },
+      "satelynx": {
+        "manufacturerName": "Satelynx",
+        "location": "Callisto",
+        "models": ["Yagi", "Clipper", "Nest", "OrbiLoader", "Chochu", "Seeker", "Glider"],
+        "extColors": ["Cosmic Black", "Solar Silver", "Nebula Blue", "Martian Red", "Callisto Ice"],
+        "intColors": ["Orbit Gray", "Quantum Cream", "Eclipse Black", "Stellar Navy", "Aurora Green"],
+        "description": "Satelynx is a pioneering spacecraft manufacturer known for its state-of-the-art designs and technological advancements. Drawing inspiration from the cutting-edge research and engineering principles of space exploration agencies like NASA and the engineering marvels of the International Space Station (ISS), Satelynx has carved out a niche for itself in the interstellar travel market. With a commitment to sustainability, safety, and reliability, Satelynx spacecraft are engineered to cater to a wide range of needs, from personal leisure travel to commercial cargo missions across the solar system."
+      },
+      "starquanta": {
+        "manufacturerName": "Starquanta",
+        "location": "Titan",
+        "models": ["Vanta", "Nebugator", "Quasar", "Operative", "Galleon", "Cutter", "Starwatcher"],
+        "extColors": ["Nebula Noir", "Comet Crimson", "Solar Flare Silver", "Aurora Aqua", "Galactic Gold"],
+        "intColors": ["Void Black", "Stellar White", "Quantum Quartz", "Orbit Olive", "Eclipse Emerald"],
+        "description": "Starquanta stands as a pioneering spaceship manufacturer nestled on the floating colonies of Titan, Saturn's largest moon. Surrounded by a thick atmosphere and ethereal landscapes, Starquanta harnesses the unique resources and energy sources of Titan to craft spaceships that blend innovation with the artistry of the cosmos. Their mission is to empower exploration, connection, and transportation across the solar system and beyond, offering a range of vessels tailored to diverse needs—from personal leisure trips to heavy-duty commercial hauls."
+      },
+      "voidenix": {
+        "manufacturerName": "Voidenix",
+        "location": "C-721",
+        "models": ["Nexa", "Orion", "Quasar", "Galactic", "Astro-Hauler", "Surveyor", "Pulse"],
+        "extColors": ["Cosmic Black / Nebula Pink", "Asteroid Gray / Comet Red", "Solar Flare Orange / Deep Space Blue", "Quantum Silver / Eclipse Purple"],
+        "intColors": ["Stardust White / Meteorite Brown", "Galactic Green / Black Hole Black", "Supernova Yellow / Dark Matter Gray"],
+        "description": "Voidenix emerges from the depths of the cosmos as a pioneering spaceship manufacturer, stationed on the enigmatic asteroid C-721, nestled in the asteroid belt between Mars and Jupiter. This strategic location harnesses the raw materials and unique gravitational forces essential for crafting the universe's most resilient and innovative vessels. Voidenix stands as a beacon of technological advancement and cosmic exploration, dedicated to pushing the boundaries of space travel through unparalleled engineering and design."
+      },
+      "eclipsogen": {
+        "manufacturerName": "Eclipsogen",
+        "location": "Lunar Prime",
+        "models": ["Lunaris", "Solstice", "Medivac", "Leap", "Orbit", "Guardian", "Starliner", "Utility"],
+        "extColors": ["Cosmic Silver / Orion Blue", "Asteroid Gray / Supernova Orange", "Comet White / Red Cross", "Black Hole Black / Stellar Gold", "Skyline Silver / Urban Yellow", "Authority Blue / Enforcer Silver", "Aurora Green / Nebula Pink", "Industrial Gray / Safety Yellow"],
+        "intColors": ["Nebula Black / Moonlight White", "Space Black / Cargo Green", "Sanitized Silver / Pulse Purple", "Exploration Beige / Galactic Green", "Taxi Checkered / Urban Gray", "Command Red / Operational Black", "Starlight Silver / Cosmic Violet", "Functional Orange / Toolbox Black"],
+        "description": "Eclipsogen stands at the forefront of lunar-based spaceship manufacturing, leveraging the unique low-gravity environment of Lunar Prime to pioneer advancements in spacecraft design and functionality. Inspired by the symbiosis of clone technology and artificial intelligence, Eclipsogen crafts vessels that are not just modes of transportation but extensions of the pilots themselves. Our ships are known for their intuitive controls, adaptive interiors, and AI-assisted functionalities, making space travel more personal and efficient. With sustainability and innovation at our core, we aim to revolutionize how humanity traverses the cosmos."
+      },
+      "stellex": {
+        "manufacturerName": "Stellex",
+        "location": "Europa",
+        "models": ["Celesteur", "Nexater", "Oralier", "Ventura", "Healix", "Pacifica"],
+        "extColors": ["Solar Silver / Cosmic Blue neon", "Nebula Matte Black / Pulsar Pink", "Aurora White / Orbit Orange" ],
+        "intColors": ["Starlight Silver", "Deep Space Black", "Nebula Navy"],
+        "description": "Stellex stands at the vanguard of space exploration and transportation technology. Specializing in the design and manufacture of advanced spacecraft, Stellex combines cutting-edge technology with aesthetic inspirations drawn from the vaporwave and neon movements. Their ships are renowned for their sleek lines, pulsating neon accents, and holographic interfaces, encapsulating the spirit of future-retro fusion. With a commitment to innovation, sustainability, and style, Stellex crafts vessels that are not just means of travel but embodiments of artistry and exploration."
+      },
+      "etherMachinesCo": {
+        "manufacturerName": "Ether Machines Co (EMC)",
+        "location": "Ganymede",
+        "models": ["X", "C-Carrier", "StarFam", "UtilityMaster", "SpaceTaxi", "CargoGiant", "ExoExplorer", "MediWing", "Enforcer"],
+        "extColors": ["Obsidian Black", "Comet Silver", "Galactic Grey", "Meteorite Maroon", "Skydust Blue", "Asteroid Grey", "Moonstone White", "Nebula Navy", "Solar Silver", "Eclipse Black", "Cosmic Copper"],
+        "intColors": ["Platinum", "Nebula Blue", "Supernova White", "Cosmic Cream", "Orbit Orange", "Solar Flare Red", "Galaxy Green", "Yellow Comet", "Deep Space Black", "Quasar Quartz", "Aurora Accents", "Crystal Cave", "Healing Green", "Vigilant Violet"],
+        "description": "Ether Machines Co (EMC) stands at the forefront of interstellar exploration and transportation technologies. With a visionary approach inspired by the seamless integration of form and function, EMC crafts spaceships that are not only vessels for travel but also embodiments of innovation and design excellence. Drawing inspiration from the robust, iconic forms of the Iron Giant and the sleek efficiency of Capsule Corp's tech, EMC combines strength with versatility, encapsulating the spirit of adventure that defines the cosmos. Every EMC ship is a testament to the company's commitment to pushing the boundaries of what's possible, offering a range of models designed to cater to the diverse needs of the interstellar community."
+      },
+      "quantarion": {
+        "manufacturerName": "Quantarion",
+        "location": "Elyxion",
+        "models": ["Aeon", "Haulorion", "Celestiar", "MediStar", "Vigilant"],
+        "extColors": ["Cosmic Silver / Starlight White", "Nebula Pink / Dawn Gold", "Meteorite Gray / Solar Flare Orange", "Void Black / Supernova Yellow", "Healing Blue / Pulse White", "Authority Gold / Enforcer Blue", "Stealth Black / Warning Red"],
+        "intColors": ["Aurora Green / Eclipse Black", "Deep Space Blue / Galaxy Green", "Comet Red / Black Hole Matte", "Starfield Silver / Planetary Purple", "Cosmic Teal / Moonlight White", "Peace Silver / Rescue Red", "Life Green / ranquility Gold"],
+        "description": "Quantarion merges the artistry of Elyxion's natural wonders with cutting-edge space engineering to create ships that are not only vessels but masterpieces of interstellar design. Each model is crafted to fulfill a specific role in the cosmos, from luxury travel and heavy cargo transport to deep space exploration and rapid-response missions. The choice of color combinations reflects the beauty and diversity of the cosmos, offering personalization while maintaining the signature elegance of the Quantarion aesthetic."
+      },
+      "xenopulse": {
+        "manufacturerName": "Xenopulse",
+        "location": "Eris Morta",
+        "models": ["Photon", "Racer", "Hard-Hat", "Boomer", "Hippy"],
+        "extColors": ["Matte Black / Neon Blue", "Cosmic Silver / Crimson Red", "Dark Void Purple / Electric Green"],
+        "intColors": ["Starlight White / Holographic Accents", "Midnight Blue / Silver Trim", "Nebula Pink / Black Highlights"],
+        "description": "Xenopulse stands at the forefront of interstellar craft innovation, merging the mystique of uncharted territories with the pulse of alien technology insights. Inspired by covert operations and the daring spirit of 60's sci-fi adventures, Xenopulse crafts are known for their sleek designs, advanced tech integrations, and a hint of the unknown. Operating from a location steeped in cosmic mystery, they embody the adventurous spirit of space exploration, drawing on the essence of Area 51's secrecy and the era's optimistic futurism."
+      },
+      "luminaris": {
+        "manufacturerName": "Luminaris",
+        "location": "Charo",
+        "models": ["Vitruvian", "Galilean", "Seraphim", "Dromon", "Archangel", "Chariot"],
+        "extColors": ["Heavenly Blue / Gold Leaf", "Comet White / Silver", "Angelic Ivory", "Celestial Green / Bronze", "Slate Gray", "Sunrise Orange"],
+        "intColors": ["Warm Wood / Brass", "Rose Red / Cream Leather", "Deep Maroons and Soft Gold", "Stone Texture", "Reflective Silver"],
+        "description": "Luminaris stands at the intersection of art and aerospace, inspired by the inventive spirit of Leonardo da Vinci. This manufacturer crafts spaceships that are not merely vehicles but masterpieces, embodying the virtues of grace, innovation, and transcendence. Each ship is a testament to humanity's quest for knowledge, designed with an eye for beauty and a soul for exploration. Luminaris's ships are known for their meticulous craftsmanship, incorporating symbolic motifs and pioneering technologies, making them a beacon of hope and exploration in the solar system and beyond."
+      },
+      "soloSpaceVentures": {
+        "manufacturerName": "Solo Space Ventures",
+        "location": "Deimos",
+        "models": ["SolarSpy", "Aerohaul", "Orbax", "Gallider", "Voidero", "SunSeeker", "Planeteer"],
+        "extColors": ["Red Mars", "Cosmic Blue", "Starlight White", "Aurora Green", "Comet Yellow", "Deep Space Noir", "Solar Flare Gold", "Cosmic Violet", "Terraform Teal"],
+        "intColors": ["Eclipse Black / Solar Silver", "Nebula Gray", "Satellite Silver / Void Black", "Stratosphere Blue / Meteorite Metallic", "Nebular Navy", "Horizon Pink", "Moondust White"],
+        "description": "Solo Space Ventures is a pioneering spaceship manufacturer dedicated to revolutionizing space travel with a focus on sustainability, efficiency, and design. Inspired by the principles of solar power and a visionary approach, Solo Space Ventures crafts vessels that are not only technologically advanced but also eco-friendly, leveraging the power of solar energy for propulsion and operations. The company's ethos revolves around making space accessible and sustainable for various purposes, from personal leisure travel to commercial logistics and interstellar exploration."
+      },
+      "nebinoAndCo": {
+        "manufacturerName": "Nebino & Co",
+        "location": "Enceladus",
+        "models": ["Vita", "Mercante", "AstraLav", "Cratea", "Stella", "Eterno", "Galattico"],
+        "extColors": ["Stellar Silver", "Midnight Nebula", "Galactic Gold", "Sovereign Sapphire", "Industrial Onyx", "Roma Red", "Durable Driftwood", "Explorer Azure", "Tactical Titanium"],
+        "intColors": ["Tuscan Sun", "Venetian Crimson", "Milanese Mocha", "Functional Charcoal", "Capri Cream", "Pisa Pewter", "Renaissance Rose", "Command Crimson"],
+        "description": "Nebino & Co is a premier spaceship manufacturer headquartered on the enigmatic and frost-covered moon, Enceladus, orbiting Saturn. Known for its artistry and innovation, Nebino & Co blends cutting-edge space technology with the elegance and flair of Italian design principles. Each spaceship is a masterpiece of engineering, characterized by sleek lines, luxurious interiors, and unparalleled performance. The essence of Italian culture, with its rich history, art, and fashion, is woven into the very fabric of Nebino & Co's designs, making each vessel not just a mode of transportation but a statement of prestige and beauty."
+      },
+      "galactigon": {
+        "manufacturerName": "Galactigon",
+        "location": "New Shanghai Orbital",
+        "models": ["Dynastique", "Silk", "Guardian", "Zenith", "Mandarin"],
+        "extColors": ["Imperial Red / Gold", "Silk White / Azure Blue", "Obsidian Black / Crimson Red", "Celestial Silver / Sky Blue", "Emperor Yellow / Phoenix Feather"],
+        "intColors": ["Jade Green / Ebony Black", "Terracotta / Silk Ivory", "Gunmetal Grey / Dragon Scale", "Bamboo Green / Cloud White", "Imperial Porcelain / Black Lacquer"],
+        "description": "Galactigon is a pioneering spaceship manufacturer that harmonizes the elegance of retrofuturism with the precision of mathematics. It crafts vessels not just for travel but as embodiments of harmony, balance, and exploration. Each ship is a masterpiece, integrating advanced propulsion technologies with design principles inspired by the flowing lines of calligraphy, the symmetry of geometric fractals, and the visionary aesthetics of space age optimism."
+      }
+}
