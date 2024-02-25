@@ -4,6 +4,7 @@ const bcrypt = require("bcrypt")
 const fs = require('fs');
 const usersRouter = require("./routes/users");
 const registerRouter = require("./routes/register");
+const loginRouter = require("./routes/login");
 const shipsRouter = require("./routes/ships");
 
 const app = express();
@@ -37,7 +38,9 @@ app.engine("europa", (filePath, options, callback) =>{
 app.set("pages", "./views");
 app.set("view engine", "europa");
 app.use("/users", usersRouter);
+app.use("/ships", shipsRouter);
 app.use("/register", registerRouter);
+app.use("/login", loginRouter);
 
 app.get('/', (req, res)=>{
     const options = {
