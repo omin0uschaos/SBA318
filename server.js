@@ -3,6 +3,8 @@ const bodyParser = require("body-parser");
 const bcrypt = require("bcrypt")
 const fs = require('fs');
 const usersRouter = require("./routes/users");
+const registerRouter = require("./routes/register");
+const shipsRouter = require("./routes/ships");
 
 const app = express();
 let PORT = 3000
@@ -35,6 +37,7 @@ app.engine("europa", (filePath, options, callback) =>{
 app.set("pages", "./views");
 app.set("view engine", "europa");
 app.use("/users", usersRouter);
+app.use("/register", registerRouter);
 
 app.get('/', (req, res)=>{
     const options = {

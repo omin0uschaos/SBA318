@@ -49,3 +49,32 @@ section{
     border: 2px solid rgba(255, 255, 255, 0.26);
     padding: 50px;
 }
+
+#user-registration-form{
+    text-align: center;
+}
+#user-registration-form{
+
+}
+.form-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.form-group label{
+    width: 200px;
+    text-align: right;
+}
+
+.form-group input{
+    width: 200px;
+    padding: 5px;
+}
+
+form button{
+    padding: 5px;
+    border-radius: 3px;
+    border: 0px ;
+
+}

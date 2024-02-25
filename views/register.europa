@@ -18,17 +18,10 @@
     </nav>
     <main>
 
-        <h1>#sub-title#</h1>
+        <h1 id="page-header">#sub-title#</h1>
 
-<div>#content#</div>
-        <form action="">
+<section>#content#</section>
 
-            <input type="text" placeholder="ship-name" name="ship-name">
-            <select name="spaceship-maker" id="ship-make-select">
-                #shipmaker#
-            </select>
-
-        </form>
     </main>
     
 
