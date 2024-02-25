@@ -1,6 +1,8 @@
 const express = require('express');
 const bodyParser = require("body-parser");
 const bcrypt = require("bcrypt")
+const fs = require('fs');
+const usersRouter = require("./routes/users");
 
 const app = express();
 let PORT = 3000
@@ -13,7 +15,7 @@ app.use(express.static(__dirname + "/styles"));
 
 app.use('/images', express.static('images'));
 app.use(express.urlencoded({ extended: true }));
-const fs = require('fs');
+
 
 app.engine("europa", (filePath, options, callback) =>{
     fs.readFile(filePath, (err, content) =>{
@@ -32,15 +34,14 @@ app.engine("europa", (filePath, options, callback) =>{
 
 app.set("pages", "./views");
 app.set("view engine", "europa");
-
-
+app.use("/users", usersRouter);
 
 app.get('/', (req, res)=>{
     const options = {
         homelink:"/",
         contactlink:"/contact",
-        title: "This is the Home Page",
-        subTitle: "Welcome to the wonderful world of Europa",
+        title: "Intergalactic Ship Registry",
+        subTitle: "Welcome to the ISR",
         content: `Europa is a place that holds unilimited possibilities. Please read more about it below. <br /><br />`
     };
     res.render("index", options);

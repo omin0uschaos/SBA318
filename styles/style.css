@@ -17,12 +17,16 @@ nav a{
     position:absolute;
     text-decoration: none;
     color: beige;
+    transition-duration: 1s;
 }
 nav a:hover{
     color: rgb(193, 130, 252);
-    transform: rotate(20deg);
+    transform: scale(1.2);
 }
-#company-logo{
+#company-logo {
     width: 200px;
     text-align: center;
+}
+#company-logo img{
+width: 100px;
 }
