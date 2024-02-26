@@ -24,8 +24,8 @@ router.get("/", (req, res) => {
                         <h2>User Registration</h2>
                         <form action="/register" method="POST">                            
                             <div class="form-group">
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" name="email" required>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
                             </div>
                             <div class="form-group">
                                 <label for="username">Username:</label>
@@ -48,7 +48,7 @@ router.get("/", (req, res) => {
         res.render("register", options);
     });
 }).post("/", (req, res, next) => {
-    const { username, email, password, confirmPassword } = req.body;
+    const { username, name, password, confirmPassword } = req.body;
 
     // Check if username already exists
     if (users.hasOwnProperty(username)) {
@@ -63,33 +63,12 @@ router.get("/", (req, res) => {
     // Generate unique license ID
     const licenseId = userIdGen();
 
-    // Get current year
-    const currentYear = new Date().getFullYear();
-
-    // Set expiration date 10 years later
-    const expirationYear = currentYear + 10;
-
     // Create user object
     const newUser = {
+        name,
         username,
-        password: bcrypt.hashSync(password, 10), // Hash password before saving
-        licenseData: {
-            licenseId,
-            licenseType: "C",
-            issuedYear: currentYear,
-            expiration: expirationYear,
-            status: "valid"
-        },
-        personData: {
-            name: "",
-            Address: "",
-            Birthdate: "",
-            photoId: "",
-            email,
-            phone: ""
-        },
+        password: bcrypt.hashSync(password, 10),
         shipsOwned: [],
-        history: []
     };
 
     // Add user to users object
