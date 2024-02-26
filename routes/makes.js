@@ -8,8 +8,8 @@ router.get("/", (req, res) => {
     let html = "";
     html += "<ul>";
     makesList.forEach(make => {
-        html += `<li><h3>${make.charAt(0).toUpperCase()
-            + make.slice(1)}</h3> <img src="/images/ships/${make}.png" alt="${make} logo"></li><br>`;
+        html += `<li><a href="/makes/${make}"><h3>${make.charAt(0).toUpperCase()
+            + make.slice(1)}</h3> <img src="/images/ships/${make}.png" alt="${make} logo"></li></a><br>`;
     });
     html += "</ul>";
     const options = {
@@ -37,6 +37,8 @@ router.get("/:makeId", (req, res) => {
         title: `${make.manufacturerName}`,
         subTitle: `${make.manufacturerName} Spaceships`,
         content: `
+            <div id="maker-page-div">
+            <img src="/images/ships/${makeId}.png" alt="${makeId} logo">
             <h2>${make.manufacturerName} Spaceships</h2>
             <div class="make-info">
                 <p><strong>Location:</strong> ${make.location}</p>
@@ -54,6 +56,7 @@ router.get("/:makeId", (req, res) => {
             <ul>
                 ${make.intColors.map(color => `<li>${color}</li>`).join('')}
             </ul>
+            </div>
         `
     };
     res.render("ships", options);

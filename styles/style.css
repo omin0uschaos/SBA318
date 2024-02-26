@@ -79,7 +79,7 @@ form button{
 
 }
 
-#search-result-ul, #makes-page-div ul{
+#search-result-ul, #makes-page-div ul, #maker-page-div ul{
     list-style-type: none;
     padding:0;
 }
@@ -98,4 +98,13 @@ form button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+#maker-page-div{
+    text-align: center;
+}
+#maker-page-div img{
+    width: 400px;
+}
+.make-info{
+    text-align: justify;
 }
