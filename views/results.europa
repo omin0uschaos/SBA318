@@ -8,10 +8,10 @@
 </head>
 <body>
     <nav>
-        <div id="company-logo"><img src="/images/isrlogo.png" alt="ISR"></div>
+        <div id="company-logo"><img src="../images/isrlogo.png" alt="ISR"></div>
         <div><a href="/">Home</a></div>
         <div><a href="/register">Register User</a></div>
-        <div><a href="#">Register Ship</a></div>
+        <div><a href="/makes">Make List</a></div>
         <div><a href="/ships/search">Ship Search</a></div>
         <div><a href="/login">Login</a></div>
     </nav>

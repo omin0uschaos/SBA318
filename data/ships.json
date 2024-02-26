@@ -18,7 +18,7 @@
       "expiration": 2608,
       "status": "expired"
     },
-    "owerInfo": {
+    "ownerInfo": {
       "name": "John Doe",
       "ownerId": "E0000000"
     },
@@ -33,8 +33,8 @@
     "shipId": "uacfMFwmhn",
     "shipInfo": [
       {
-        "make": "Astrodyne",
-        "model": "Obstacle",
+        "make": "Nebino And Co",
+        "model": "Vita",
         "year": 2590,
         "color": "Nebula Pink",
         "usage": "Exploration"
@@ -46,7 +46,7 @@
       "expiration": 2607,
       "status": "expired"
     },
-    "owerInfo": {
+    "ownerInfo": {
       "name": "John Doe",
       "ownerId": "E0000000"
     },
@@ -55,6 +55,270 @@
         "incDate": 2607,
         "incType": "Collision",
         "incDetails": "Owner crashed falcon 8 into a tree, Totaled."
+      }
+    ]
+  },
+  "bbafMFwmhn": {
+    "shipName": "Orbitron",
+    "shipId": "bbafMFwmhn",
+    "shipInfo": [{
+      "make": "Astrodyne",
+      "model": "Orbitron-OX",
+      "year": 2610,
+      "color": "Galactic Green",
+      "usage": "Exploration"
+    }],
+    "registryData": {
+      "regPlate": "ABC123",
+      "issuedYear": 2610,
+      "expiration": 2615,
+      "status": "active"
+    },
+    "ownerInfo": {
+      "name": "Alice Trae",
+      "ownerId": "E0000002"
+    },
+    "history": []
+  },
+  "d03xfgmo57": {
+    "shipName": "Greatknot",
+    "shipId": "d03xfgmo57",
+    "shipInfo": [
+      {
+        "make": "Nebulairix",
+        "model": "Galaide",
+        "year": 2610,
+        "extColor": "Comet White / Solar Orange",
+        "intColor": "Warm Nebula Pink / Soft Starlight",
+        "usage": "Exploration"
+      }
+    ],
+    "registryData": {
+      "regPlate": "M31JJ936YR1P",
+      "issuedYear": 2610,
+      "expiration": 2614,
+      "status": "active"
+    },
+    "ownerInfo": {
+      "name": "Aurora Starlight",
+      "ownerId": "L0001234"
+    },
+    "history": [{}]
+  },
+  "lseshc8yf4": {
+    "shipName": "Angelhead",
+    "shipId": "lseshc8yf4",
+    "shipInfo": [
+      {
+        "make": "Galaxior",
+        "model": "Void-Riff",
+        "year": 2610,
+        "extColor": "Supernova Silver",
+        "intColor": "Quantum Red",
+        "usage": "Exploration"
+      }
+    ],
+    "registryData": {
+      "regPlate": "SOLRVYG3R",
+      "issuedYear": 2610,
+      "expiration": 2620,
+      "status": "active"
+    },
+    "ownerInfo": {
+      "name": "Jackie Moon",
+      "ownerId": "L0001234"
+    },
+    "history": [
+      {
+        "incDate": 2613,
+        "incType": "Maintenance",
+        "incDetails": "Routine maintenance check completed."
+      }
+    ]
+  },
+  "q41my9cqdx": {
+    "shipName": "Twentydust",
+    "shipId": "q41my9cqdx",
+    "shipInfo": [
+      {
+        "make": "Galactigon",
+        "model": "Silk",
+        "year": 2610,
+        "extColor": "Imperial Red",
+        "intColor": "Jade Green",
+        "usage": "Exploration"
+      }
+    ],
+    "registryData": {
+      "regPlate": "X78JW901YZ2A",
+      "issuedYear": 2610,
+      "expiration": 2615,
+      "status": "active"
+    },
+    "ownerInfo": {
+      "name": "Ewan Knowles",
+      "ownerId": "D2107279"
+    },
+    "history": [
+      {
+        "incDate": 2613,
+        "incType": "Maintenance",
+        "incDetails": "Routine maintenance check completed."
+      }
+    ]
+  },
+  "qappusr3sx": {
+    "shipName": "Pheobe",
+    "shipId": "qappusr3sx",
+    "shipInfo": [
+      {
+        "make": "Solospaceventures",
+        "model": "Orbax",
+        "year": 2608,
+        "extColor": "Cosmic Blue",
+        "intColor": "Orbit Orange",
+        "usage": "Interstellar Travel"
+      }
+    ],
+    "registryData": {
+      "regPlate": "SOLAR123",
+      "issuedYear": 2608,
+      "expiration": 2613,
+      "status": "active"
+    },
+    "ownerInfo": {
+      "name": "Lukas Meza",
+      "ownerId": "Z4489097"
+    },
+    "history": [
+      {
+        "incDate": 2611,
+        "incType": "Maintenance",
+        "incDetails": "Routine maintenance checkup and engine tune-up."
+      }
+    ]
+  },
+  "w66lkhykjn": {
+    "shipName": "Undercover Knight",
+    "shipId": "w66lkhykjn",
+    "shipInfo": [
+      {
+        "make": "Stellex",
+        "model": "Ventura",
+        "year": 2610,
+        "extColor": "Solar Silver",
+        "intColor": "Starlight Silver",
+        "usage": "Interstellar Exploration"
+      }
+    ],
+    "registryData": {
+      "regPlate": "LUNAR-1234",
+      "issuedYear": 2610,
+      "expiration": 2620,
+      "status": "active"
+    },
+    "ownerInfo": {
+      "name": "Rosalie Malone",
+      "ownerId": "R1859076"
+    },
+    "history": [
+      {
+        "incDate": 2621,
+        "incType": "Maintenance",
+        "incDetails": "Routine maintenance checkup performed."
+      }
+    ]
+  },
+  "izu09811yf": {
+    "shipName": "Lifeless",
+    "shipId": "izu09811yf",
+    "shipInfo": [
+      {
+        "make": "Quasitrek",
+        "model": "Star-Seeker",
+        "year": 2605,
+        "extColor": "Cosmic Silver",
+        "intColor": "Lunar White",
+        "usage": "Interstellar Travel"
+      }
+    ],
+    "registryData": {
+      "regPlate": "COSMIC-4567",
+      "issuedYear": 2605,
+      "expiration": 2615,
+      "status": "active"
+    },
+    "ownerInfo": {
+      "name": "Tasneem Zimmerman",
+      "ownerId": "T1896301"
+    },
+    "history": [
+      {
+        "incDate": 2615,
+        "incType": "Upgrade",
+        "incDetails": "Installed new hyperdrive engine for faster travel."
+      }
+    ]
+  },
+  "666o1m17ec": {
+    "shipName": "Deaf Newt",
+    "shipId": "666o1m17ec", 
+    "shipInfo": [
+      {
+        "make": "Voidenix",
+        "model": "Nexa",
+        "year": 2609,
+        "extColor": "Comet White / Solar Orange",
+        "intColor": "Warm Nebula Pink / Soft Starlight",
+        "usage": "Exploration"
+      }
+    ],
+    "registryData": {
+      "regPlate": "NV-2609-001",
+      "issuedYear": 2609,
+      "expiration": 2614,
+      "status": "active"
+    },
+    "ownerInfo": {
+      "name": "Abdullah Murphy",
+      "ownerId": "A9820589"
+    },
+    "history": [
+      {
+        "incDate": 2612,
+        "incType": "First Contact",
+        "incDetails": "Discovered sentient life on a distant planet."
+      }
+    ]
+  },
+  "7nnlwilqdd": {
+    "shipName": "Fivedust",
+    "shipId": "7nnlwilqdd",
+    "shipInfo": [
+      {
+        "make": "Quantarion",
+        "model": "Celestiar",
+        "year": 2612,
+        "extColor": "Meteorite Gray / Solar Flare Orange",
+        "intColor": "Cosmic Teal / Moonlight White",
+        "usage": "Research"
+      }
+    ],
+    "registryData": {
+      "regPlate": "QE-2612-001",
+      "issuedYear": 2612,
+      "expiration": 2617,
+      "status": "active"
+    },
+    "ownerInfo": {
+      "name": "Sam Martin",
+      "ownerId": "E0026432"
+    },
+    "history": [
+      {
+        "incDate": 2615,
+        "incType": "Temporal Anomaly",
+        "incDetails": "Briefly shifted into an alternate timeline."
       }
     ]
   }

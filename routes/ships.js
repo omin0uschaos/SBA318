@@ -49,8 +49,8 @@ router.get("/search/results", (req, res) => {
         const lowerShipId = ship.shipId.toLowerCase();
         const lowerShipName = ship.shipName.toLowerCase();
         const lowerMake = ship.shipInfo[0].make.toLowerCase();
-        const lowerOwnerName = ship.owerInfo.name.toLowerCase();
-        const lowerOwnerId = ship.owerInfo.ownerId.toLowerCase();
+        const lowerOwnerName = ship.ownerInfo.name.toLowerCase();
+        const lowerOwnerId = ship.ownerInfo.ownerId.toLowerCase();
 
         return (
             lowerShipId.includes(lowerSearchTerm) ||
@@ -76,11 +76,12 @@ router.get("/search/results", (req, res) => {
             <ul id="search-result-ul">
                 ${filteredShips.map(ship => `
                     <li>
+                    <img src="/images/ships/${ship.shipInfo[0].make.toLowerCase().replace(/\s+/g, '')}/${ship.shipInfo[0].model}.png" alt="ISR">
                         <p>Ship Name: ${ship.shipName}</p>
                         <p>Ship ID: ${ship.shipId}</p>
                         <p>Make: ${ship.shipInfo[0].make}</p>
-                        <p>Owner Name: ${ship.owerInfo.name}</p>
-                        <p>Owner ID: ${ship.owerInfo.ownerId}</p>
+                        <p>Owner Name: ${ship.ownerInfo.name}</p>
+                        <p>Owner ID: ${ship.ownerInfo.ownerId}</p>
                     </li><br>
                 `).join('')}
             </ul>

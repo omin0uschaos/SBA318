@@ -2,6 +2,7 @@ body{
     margin: 0;
     background-image: url("../images/deep_space.jpg");
     background-size:auto;
+    background-attachment: fixed;
 }
 
 nav{
@@ -78,7 +79,23 @@ form button{
 
 }
 
-#search-result-ul{
+#search-result-ul, #makes-page-div ul{
     list-style-type: none;
     padding:0;
+}
+#search-result-ul img{
+    width: 300px;
+}
+
+#makes-page-div img{
+    width: 300px;
+}
+#makes-page-div{
+    text-align: center;
+}
+#makes-page-div li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

@@ -101,8 +101,15 @@ router.get("/", (req, res) => {
             console.error(err);
             return res.status(500).send('Internal Server Error');
         }
-        
-        res.status(200).send('User registered successfully');
+        const options = {
+
+            title: `Account created`,
+            subTitle: `Account created`,
+            content: `<div id="user-registration-form">
+                        <h2>User registered successfully</h2>
+            `
+        };
+        res.render("register", options);
     });
 });
 

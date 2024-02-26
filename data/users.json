@@ -71,11 +71,149 @@
       }
     ]
   },
-  "Q9729079": {
-    "username": "1610moose",
-    "password": "$2b$10$z5Bc0Wbpgseyc52lJcoFyO8QHI5FWNiQovSTBlz9Uxu.3.aIdh6G6",
+  "E0000002": {
+    "name": "Alice Trae",
+    "username": "alice_smith",
+    "licenseId": "E0000002",
+    "shipsOwned": [
+      {
+        "shipId": "bbafMFwmhn"
+      }
+    ]
+  },
+  "L123456789": {
+    "name": "Aurora Starlight",
+    "username": "aurora_star",
+    "licenseId": "L123456789",
+    "shipsOwned": [
+      {
+        "shipId": "d03xfgmo57"
+      }
+    ]
+  },
+  "L0001234": {
+    "name": "Jackie Moon",
+    "username": "jack_moon",
+    "licenseId": "L0001234",
+    "shipsOwned": [
+      {
+        "shipId": "lseshc8yf4"
+      }
+    ]
+  },
+  "D2107279": {
+    "name": "Ewan Knowles",
+    "licenseId": "D2107279",
+    "shipsOwned": [
+      {
+        "shipId": "q41my9cqdx"
+      }
+    ]
+  },
+  "Z4489097": {
+    "name": "Lukas Meza",
+    "licenseId": "Z4489097",
+    "shipsOwned": [
+      {
+        "shipId": "qappusr3sx"
+      }
+    ]
+  },
+  "R1859076": {
+    "name": "Rosalie Malone",
+    "licenseId": "R1859076",
+    "shipsOwned": [
+      {
+        "shipId": "w66lkhykjn"
+      }
+    ]
+  },
+  "T1896301": {
+    "name": "Tasneem Zimmerman",
+    "licenseId": "T1896301",
+    "shipsOwned": [
+      {
+        "shipId": "izu09811yf"
+      }
+    ]
+  },
+  "A9820589": {
+    "name": "Abdullah Murphy",
+    "licenseId": "A9820589",
+    "shipsOwned": [
+      {
+        "shipId": "666o1m17ec"
+      }
+    ]
+  },
+  "E0026432": {
+    "name": "Sam Martin",
+    "licenseId": "E0026432",
+    "shipsOwned": [
+      {
+        "shipId": "7nnlwilqdd"
+      }
+    ]
+  },
+  "V6973107": {
+    "name": "Sadia Delgado",
+    "licenseId": "V6973107",
+    "shipsOwned": [
+      {
+        "shipId": "30xulbidin"
+      }
+    ]
+  },
+  "C3740823": {
+    "name": "Francesca Gardner",
+    "licenseId": "C3740823",
+    "shipsOwned": [
+      {
+        "shipId": "mjhmwjxv1x"
+      }
+    ]
+  },
+  "E3843877": {
+    "name": "Mateo Pennington",
+    "licenseId": "E3843877",
+    "shipsOwned": [
+      {
+        "shipId": "g10uup2d49"
+      }
+    ]
+  },
+  "I1630959": {
+    "name": "Haseeb Poole",
+    "licenseId": "I1630959",
+    "shipsOwned": [
+      {
+        "shipId": "6smv9972kv"
+      }
+    ]
+  },
+  "Z0337078": {
+    "name": "Pablo Vega",
+    "licenseId": "Z0337078",
+    "shipsOwned": [
+      {
+        "shipId": "k62zhtk9yl"
+      }
+    ]
+  },
+  "S2460018": {
+    "name": "Khadijah Hamilton",
+    "licenseId": "S2460018",
+    "shipsOwned": [
+      {
+        "shipId": "fx0z32ozis"
+      }
+    ]
+  },
+  "W5372835": {
+    "username": "moose",
+    "password": "$2b$10$Q6/IH.K.K5XjgIORb4oga.u4px0NfdlnQGE8zDSOQ15kANi5wlCCa",
     "licenseData": {
-      "licenseId": "Q9729079",
+      "licenseId": "W5372835",
       "licenseType": "C",
       "issuedYear": 2024,
       "expiration": 2034,
@@ -86,7 +224,49 @@
       "Address": "",
       "Birthdate": "",
       "photoId": "",
-      "email": "isjoecool@yahoo.com",
+      "email": "123@123.com",
+      "phone": ""
+    },
+    "shipsOwned": [],
+    "history": []
+  },
+  "V4098947": {
+    "username": "1610moose",
+    "password": "$2b$10$sobiOcUJw/1NFsqL/SNy0ekTlknWWFHiPVaYAsx0WDEz3Y9QeB6aC",
+    "licenseData": {
+      "licenseId": "V4098947",
+      "licenseType": "C",
+      "issuedYear": 2024,
+      "expiration": 2034,
+      "status": "valid"
+    },
+    "personData": {
+      "name": "",
+      "Address": "",
+      "Birthdate": "",
+      "photoId": "",
+      "email": "cboyxcbx@gmail.com",
+      "phone": ""
+    },
+    "shipsOwned": [],
+    "history": []
+  },
+  "B2519138": {
+    "username": "1610moose",
+    "password": "$2b$10$rckK2pUzv0eIPbaOsRkWMed6GURhdZkuWro1jRAbYnlyqhJHSPSga",
+    "licenseData": {
+      "licenseId": "B2519138",
+      "licenseType": "C",
+      "issuedYear": 2024,
+      "expiration": 2034,
+      "status": "valid"
+    },
+    "personData": {
+      "name": "",
+      "Address": "",
+      "Birthdate": "",
+      "photoId": "",
+      "email": "cboyxcbx@gmail.com",
       "phone": ""
     },
     "shipsOwned": [],

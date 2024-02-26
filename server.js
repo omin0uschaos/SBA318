@@ -6,13 +6,23 @@ const usersRouter = require("./routes/users");
 const registerRouter = require("./routes/register");
 const loginRouter = require("./routes/login");
 const shipsRouter = require("./routes/ships");
+const makesRouter = require("./routes/makes");
+const adminRouter = require("./routes/admin");
+const session = require("express-session");
 
 const app = express();
 let PORT = 3000
 
+
 // Parsing Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ extended: true }));
+
+app.use(session({
+    secret: "spacemen-never-die",
+    resave: false,
+    saveUninitialized: false
+}));
 
 app.use(express.static(__dirname + "/styles"));
 
@@ -41,6 +51,8 @@ app.use("/users", usersRouter);
 app.use("/ships", shipsRouter);
 app.use("/register", registerRouter);
 app.use("/login", loginRouter);
+app.use("/makes", makesRouter);
+app.use("/admin", adminRouter);
 
 app.get('/', (req, res)=>{
     const options = {

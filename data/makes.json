@@ -79,7 +79,7 @@
         "intColors": ["Starlight Silver", "Deep Space Black", "Nebula Navy"],
         "description": "Stellex stands at the vanguard of space exploration and transportation technology. Specializing in the design and manufacture of advanced spacecraft, Stellex combines cutting-edge technology with aesthetic inspirations drawn from the vaporwave and neon movements. Their ships are renowned for their sleek lines, pulsating neon accents, and holographic interfaces, encapsulating the spirit of future-retro fusion. With a commitment to innovation, sustainability, and style, Stellex crafts vessels that are not just means of travel but embodiments of artistry and exploration."
       },
-      "etherMachinesCo": {
+      "ethermachinesco": {
         "manufacturerName": "Ether Machines Co (EMC)",
         "location": "Ganymede",
         "models": ["X", "C-Carrier", "StarFam", "Mass", "SpaceTaxi", "Giant", "ExoExplorer", "MediWing", "Enforcer"],
@@ -111,7 +111,7 @@
         "intColors": ["Warm Wood / Brass", "Rose Red / Cream Leather", "Deep Maroons and Soft Gold", "Stone Texture", "Reflective Silver"],
         "description": "Luminaris stands at the intersection of art and aerospace, inspired by the inventive spirit of Leonardo da Vinci. This manufacturer crafts spaceships that are not merely vehicles but masterpieces, embodying the virtues of grace, innovation, and transcendence. Each ship is a testament to humanity's quest for knowledge, designed with an eye for beauty and a soul for exploration. Luminaris's ships are known for their meticulous craftsmanship, incorporating symbolic motifs and pioneering technologies, making them a beacon of hope and exploration in the solar system and beyond."
       },
-      "soloSpaceVentures": {
+      "solospaceventures": {
         "manufacturerName": "Solo Space Ventures",
         "location": "Deimos",
         "models": ["SolarSpy", "Aerohaul", "Orbax", "Gallider", "Voidero", "SunSeeker", "Planeteer"],
@@ -119,8 +119,8 @@
         "intColors": ["Eclipse Black / Solar Silver", "Nebula Gray", "Satellite Silver / Void Black", "Stratosphere Blue / Meteorite Metallic", "Nebular Navy", "Horizon Pink", "Moondust White"],
         "description": "Solo Space Ventures is a pioneering spaceship manufacturer dedicated to revolutionizing space travel with a focus on sustainability, efficiency, and design. Inspired by the principles of solar power and a visionary approach, Solo Space Ventures crafts vessels that are not only technologically advanced but also eco-friendly, leveraging the power of solar energy for propulsion and operations. The company's ethos revolves around making space accessible and sustainable for various purposes, from personal leisure travel to commercial logistics and interstellar exploration."
       },
-      "nebinoAndCo": {
-        "manufacturerName": "Nebino & Co",
+      "nebinoandco": {
+        "manufacturerName": "Nebino and Co",
         "location": "Enceladus",
         "models": ["Vita", "Mercante", "AstraLav", "Cratea", "Stella", "Eterno", "Galattico"],
         "extColors": ["Stellar Silver", "Midnight Nebula", "Galactic Gold", "Sovereign Sapphire", "Industrial Onyx", "Roma Red", "Durable Driftwood", "Explorer Azure", "Tactical Titanium"],

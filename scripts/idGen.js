@@ -40,6 +40,6 @@ function generateRegPlate() {
 module.exports = {generateUserID: generateUserID};
 const username = 'sampleUser';
 const userID = generateUserID(username);
-console.log(userID);
-console.log(generateShipId());
-console.log(generateRegPlate());
+// console.log(userID);
+// console.log(generateShipId());
+// console.log(generateRegPlate());
