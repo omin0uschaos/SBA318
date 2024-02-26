@@ -3,7 +3,7 @@ const router = express.Router();
 const fs = require('fs');
 
 const users = require("../data/users");
-
+const { generateUserID, generateShipId, generateRegPlate } = require('../scripts/idGen.js');
 
 router.get("/", (req, res) => {
     fs.readFile('./data/users.json', 'utf8', (err, data) => {
@@ -70,11 +70,110 @@ router.get("/:userId", (req, res) => {
                 <p>Name: ${name}</p>
                 <p>License ID: ${licenseId}</p>
                 <p>Ships Owned: ${shipsOwned}</p>
+                <a href="/users/${licenseId}/addship">Add Ships</a>
             `
         };
         res.render("users", options);
     });
 });
+
+router.get("/:userId/addship", (req, res) => {
+    const userId = req.params.userId;
+    const options = {
+        title: `Add ship to - ${userId}`,
+        subTitle: `Add Ships to User ID: ${userId}`,
+        content: `
+        <h1>Add New Ship</h1>
+        `
+    };
+
+    res.render("useraddship", options);
+});
+
+// PATCH route to add the ship to ships.json and update users.json
+router.patch("/:userId/addship", (req, res) => {
+    const userId = req.params.userId;
+    const { shipName, manufacturer, model, exteriorColor, interiorColor } = req.body;
+
+    const shipId = generateShipId();
+
+    // Prepare ship data
+    const newShipData = {
+        shipName,
+        shipId,
+        shipInfo: [{
+            make: manufacturer,
+            model,
+            extColor: exteriorColor,
+            intColor: interiorColor
+        }],
+        registryData: {
+            regPlate: generateRegPlate(),
+            issuedYear: new Date().getFullYear(),
+            expiration: new Date().getFullYear() + 5,
+            status: "active"
+        },
+        ownerInfo: {
+            ownerId: userId
+        },
+        history: []
+    };
+
+    // Read ships.json
+    fs.readFile('./data/ships.json', 'utf8', (err, shipsData) => {
+        if (err) {
+            console.error(err);
+            return res.status(500).send('Internal Server Error');
+        }
+
+        // Parse ships data
+        let ships = JSON.parse(shipsData);
+
+        // Add the new ship to the ships data
+        ships[shipId] = newShipData; // Assign new ship data
+
+        // Update ships.json
+        fs.writeFile("./data/ships.json", JSON.stringify(ships, null, 2), err => {
+            if (err) {
+                console.error(err);
+                return res.status(500).send("Error updating ships data");
+            }
+
+            // Read users.json
+            fs.readFile('./data/users.json', 'utf8', (err, userData) => {
+                if (err) {
+                    console.error(err);
+                    return res.status(500).send('Internal Server Error');
+                }
+
+                // Parse users data
+                let users = JSON.parse(userData);
+
+                // Find user by ID
+                const user = users[userId];
+                if (!user) {
+                    return res.status(404).send('User not found');
+                }
+
+                // Add ship to user's shipsOwned array
+                user.shipsOwned.push({ shipId });
+
+                // Update users.json
+                fs.writeFile("./data/users.json", JSON.stringify(users, null, 2), err => {
+                    if (err) {
+                        console.error(err);
+                        return res.status(500).send("Error updating user's ships");
+                    }
+
+                    // Redirect to user profile page
+                    res.redirect(`/users/${userId}`);
+                });
+            });
+        });
+    });
+});
+
+
 
 
 module.exports = router;

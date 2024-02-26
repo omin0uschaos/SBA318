@@ -37,7 +37,11 @@ function generateRegPlate() {
     return regPlate;
 }
 
-module.exports = {generateUserID: generateUserID};
+module.exports = {
+    generateUserID: generateUserID,
+    generateShipId: generateShipId,
+    generateRegPlate: generateRegPlate
+};
 const username = 'sampleUser';
 const userID = generateUserID(username);
 // console.log(userID);

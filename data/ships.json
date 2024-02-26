@@ -23,11 +23,9 @@
       "ownerId": "E0000000"
     },
     "history": [
-      {
-
-      }
+      {}
     ]
-  }, 
+  },
   "uacfMFwmhn": {
     "shipName": "Falcon 8",
     "shipId": "uacfMFwmhn",
@@ -61,13 +59,15 @@
   "bbafMFwmhn": {
     "shipName": "Orbitron",
     "shipId": "bbafMFwmhn",
-    "shipInfo": [{
-      "make": "Astrodyne",
-      "model": "Orbitron-OX",
-      "year": 2610,
-      "color": "Galactic Green",
-      "usage": "Exploration"
-    }],
+    "shipInfo": [
+      {
+        "make": "Astrodyne",
+        "model": "Orbitron-OX",
+        "year": 2610,
+        "color": "Galactic Green",
+        "usage": "Exploration"
+      }
+    ],
     "registryData": {
       "regPlate": "ABC123",
       "issuedYear": 2610,
@@ -103,7 +103,9 @@
       "name": "Aurora Starlight",
       "ownerId": "L0001234"
     },
-    "history": [{}]
+    "history": [
+      {}
+    ]
   },
   "lseshc8yf4": {
     "shipName": "Angelhead",
@@ -262,7 +264,7 @@
   },
   "666o1m17ec": {
     "shipName": "Deaf Newt",
-    "shipId": "666o1m17ec", 
+    "shipId": "666o1m17ec",
     "shipInfo": [
       {
         "make": "Voidenix",
@@ -321,5 +323,21 @@
         "incDetails": "Briefly shifted into an alternate timeline."
       }
     ]
+  },
+  "qkpik7aw8h": {
+    "shipId": "qkpik7aw8h",
+    "shipInfo": [
+      {}
+    ],
+    "registryData": {
+      "regPlate": "T5E6N33D67G8",
+      "issuedYear": 2024,
+      "expiration": 2029,
+      "status": "active"
+    },
+    "ownerInfo": {
+      "ownerId": "W5372835"
+    },
+    "history": []
   }
 }

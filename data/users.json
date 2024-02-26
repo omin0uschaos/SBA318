@@ -6,11 +6,9 @@
     "licenseId": "E0000000",
     "shipsOwned": [
       {
-        "shipName": "Falcon 9",
         "shipId": "ZdkrugHREK"
       },
       {
-        "shipName": "Falcon 8",
         "shipId": "uacfMFwmhn"
       }
     ]
@@ -22,11 +20,9 @@
     "licenseId": "E0000001",
     "shipsOwned": [
       {
-        "shipName": "Falcon 9",
         "shipId": "ZdkrugHREK"
       },
       {
-        "shipName": "Falcon 8",
         "shipId": "uacfMFwmhn"
       }
     ]
@@ -174,7 +170,11 @@
     "username": "moose",
     "password": "$2b$10$Q6/IH.K.K5XjgIORb4oga.u4px0NfdlnQGE8zDSOQ15kANi5wlCCa",
     "licenseId": "W5372835",
-    "shipsOwned": []
+    "shipsOwned": [
+      {
+        "shipId": "qkpik7aw8h"
+      }
+    ]
   },
   "I8182045": {
     "name": "Luna Lemon",

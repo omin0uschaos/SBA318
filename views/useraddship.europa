@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#title#</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script>
+
+        function populateModels() {
+    var manufacturer = document.getElementById("manufacturer").value;
+    var modelsSelect = document.getElementById("models");
+    modelsSelect.innerHTML = ""; // Clear existing options
+
+    if (manufacturer === "Vorpyxion") {
+        var models = ["Pulsar", "Harmony", "Vector", "Galaxy-Cab", "Void-Explorer"];
+    } else if (manufacturer === "Quasitrek") {
+        var models = ["Viyago", "Odyssey", "Celeste", "Atlas", "Quantus", "Terra-Titan", "Star-Seeker"];
+    } else if (manufacturer === "Nebulairix") {
+        var models = ["Solarflare", "Galaide", "Comet", "Packmule", "Moonwalker"];
+    } else if (manufacturer === "Galaxior") {
+        var models = ["Void-Riff", "Shredder", "Choir", "Nebulass", "Drifter", "Loader", "Eclipsorer"];
+    } else if (manufacturer === "Astrodyne") {
+        var models = ["Obstacle", "Orbitron-OX", "AsteriXpress", "Comet-Cab", "StarStream", "Quester"];
+    } else if (manufacturer === "Satelynx") {
+        var models = ["Yagi", "Clipper", "Nest", "OrbiLoader", "Chochu", "Seeker", "Glider"];
+    } else if (manufacturer === "Starquanta") {
+        var models = ["Vanta", "Nebugator", "Quasar", "Operative", "Galleon", "Cutter", "Starwatcher"];
+    } else if (manufacturer === "Voidenix") {
+        var models = ["Nexa", "Orion", "Galactic", "Astro-Hauler", "Surveyor", "Pulse"];
+    } else if (manufacturer === "Eclipsogen") {
+        var models = ["Lunaris", "Solstice", "Medivac", "Leap", "Orbit", "Guardian", "Starliner", "Utility"];
+    } else if (manufacturer === "Stellex") {
+        var models = ["Celesteur", "Nexater", "Oralier", "Ventura", "Healix", "Pacifica"];
+    } else if (manufacturer === "Ether Machines Co (EMC)") {
+        var models = ["X", "C-Carrier", "StarFam", "Mass", "SpaceTaxi", "Giant", "ExoExplorer", "MediWing", "Enforcer"];
+    } else if (manufacturer === "Quantarion") {
+        var models = ["Aeon", "Haulorion", "Celestiar", "MediStar", "Vigilant"];
+    } else if (manufacturer === "Xenopulse") {
+        var models = ["Photon", "Racer", "Hard-Hat", "Boomer", "Hippy"];
+    } else if (manufacturer === "Luminaris") {
+        var models = ["Vitruvian", "Galilean", "Seraphim", "Dromon", "Archangel", "Chariot"];
+    } else if (manufacturer === "Solo Space Ventures") {
+        var models = ["SolarSpy", "Aerohaul", "Orbax", "Gallider", "Voidero", "SunSeeker", "Planeteer"];
+    } else if (manufacturer === "Nebino and Co") {
+        var models = ["Vita", "Mercante", "AstraLav", "Cratea", "Stella", "Eterno", "Galattico"];
+    } else if (manufacturer === "Galactigon") {
+        var models = ["Dynastique", "Silk", "Guardian", "Zenith", "Mandarin"];
+    }
+
+    // Populate models select options
+    models.forEach(function(model) {
+        var option = document.createElement("option");
+        option.text = model;
+        modelsSelect.add(option);
+    });
+}
+
+function populateColors() {
+    var manufacturer = document.getElementById("manufacturer").value;
+    var exteriorColorsSelect = document.getElementById("exterior-colors");
+    var interiorColorsSelect = document.getElementById("interior-colors");
+    exteriorColorsSelect.innerHTML = ""; // Clear existing options
+    interiorColorsSelect.innerHTML = ""; // Clear existing options
+
+    if (manufacturer === "Vorpyxion") {
+        var exteriorColors = ["Cosmic Silver", "Asteroid Grey", "Meteorite White", "Void Black", "Planetary Blue"];
+        var interiorColors = ["Starlight White", "Cozy Earth", "Tranquil Sea", "Vibrant Violet", "Discovery Orange", "Exploration Teal"];
+    } else if (manufacturer === "Quasitrek") {
+        var exteriorColors = ["Cosmic Silver", "Nebula Blue", "Earth Brown", "Sky Blue", "Taxi Yellow", "Space Black", "Asteroid Gray", "Solar Orange", "Nova White", "Eclipse Black", "Industrial Steel", "Terra Green", "Void Black", "Comet Red"];
+        var interiorColors = ["Lunar White", "Martian Red", "Venusian Gold", "Mercury Silver", "Gaian Green", "Oceanic Blue", "Sunset Orange", "Earthrise Gray"];
+    } else if (manufacturer === "Nebulairix") {
+        var exteriorColors = ["Comet White / Solar Orange", "Deep Space Black / Nebula Pink", "Icy Blue / Starlight Silver"];
+        var interiorColors = ["Warm Nebula Pink / Soft Starlight", "Deep Galactic Blue / Aurora Green", "Solar Flare Orange / Cosmic Violet"];
+    } else if (manufacturer === "Galaxior") {
+        var exteriorColors = ["Dark Matter Black", "Supernova Silver", "Nebula Blue"];
+        var interiorColors = ["Quantum Red", "Pulsar Purple", "Singularity Silver"];
+    } else if (manufacturer === "Astrodyne") {
+        var exteriorColors = ["Cosmic Blue", "Asteroid Grey", "Nebula Pink", "Comet Red", "Solar Flare Orange", "Aurora Green", "Pulsar Purple", "Black Hole Matte"];
+        var interiorColors = ["Starlight Silver", "Lunar White", "Space Station Silver", "Industrial Chrome", "Galaxy Green", "Sunrise Gold", "Cosmic Grey", "Quantum Quartz", "Photon White"];
+    } else if (manufacturer === "Satelynx") {
+        var exteriorColors = ["Cosmic Black", "Solar Silver", "Nebula Blue", "Martian Red", "Callisto Ice"];
+        var interiorColors = ["Orbit Gray", "Quantum Cream", "Eclipse Black", "Stellar Navy", "Aurora Green"];
+    } else if (manufacturer === "Starquanta") {
+        var exteriorColors = ["Nebula Noir", "Comet Crimson", "Solar Flare Silver", "Aurora Aqua", "Galactic Gold"];
+        var interiorColors = ["Void Black", "Stellar White", "Quantum Quartz", "Orbit Olive", "Eclipse Emerald"];
+    } else if (manufacturer === "Voidenix") {
+        var exteriorColors = ["Cosmic Black / Nebula Pink", "Asteroid Gray / Comet Red", "Solar Flare Orange / Deep Space Blue", "Quantum Silver / Eclipse Purple"];
+        var interiorColors = ["Stardust White / Meteorite Brown", "Galactic Green / Black Hole Black", "Supernova Yellow / Dark Matter Gray"];
+    } else if (manufacturer === "Eclipsogen") {
+        var exteriorColors = ["Cosmic Silver / Orion Blue", "Asteroid Gray / Supernova Orange", "Comet White / Red Cross", "Black Hole Black / Stellar Gold", "Skyline Silver / Urban Yellow", "Authority Blue / Enforcer Silver", "Aurora Green / Nebula Pink", "Industrial Gray / Safety Yellow"];
+        var interiorColors = ["Nebula Black / Moonlight White", "Space Black / Cargo Green", "Sanitized Silver / Pulse Purple", "Exploration Beige / Galactic Green", "Taxi Checkered / Urban Gray", "Command Red / Operational Black", "Starlight Silver / Cosmic Violet", "Functional Orange / Toolbox Black"];
+    } else if (manufacturer === "Stellex") {
+        var exteriorColors = ["Solar Silver / Cosmic Blue neon", "Nebula Matte Black / Pulsar Pink", "Aurora White / Orbit Orange"];
+        var interiorColors = ["Starlight Silver", "Deep Space Black", "Nebula Navy"];
+    } else if (manufacturer === "Ether Machines Co (EMC)") {
+        var exteriorColors = ["Obsidian Black", "Comet Silver", "Galactic Grey", "Meteorite Maroon", "Skydust Blue", "Asteroid Grey", "Moonstone White", "Nebula Navy", "Solar Silver", "Eclipse Black", "Cosmic Copper"];
+        var interiorColors = ["Platinum", "Nebula Blue", "Supernova White", "Cosmic Cream", "Orbit Orange", "Solar Flare Red", "Galaxy Green", "Yellow Comet", "Deep Space Black", "Quasar Quartz", "Aurora Accents", "Crystal Cave", "Healing Green", "Vigilant Violet"];
+    } else if (manufacturer === "Quantarion") {
+        var exteriorColors = ["Cosmic Silver / Starlight White", "Nebula Pink / Dawn Gold", "Meteorite Gray / Solar Flare Orange", "Void Black / Supernova Yellow", "Healing Blue / Pulse White", "Authority Gold / Enforcer Blue", "Stealth Black / Warning Red"];
+        var interiorColors = ["Aurora Green / Eclipse Black", "Deep Space Blue / Galaxy Green", "Comet Red / Black Hole Matte", "Starfield Silver / Planetary Purple", "Cosmic Teal / Moonlight White", "Peace Silver / Rescue Red", "Life Green / Tranquility Gold"];
+    } else if (manufacturer === "Xenopulse") {
+        var exteriorColors = ["Matte Black / Neon Blue", "Cosmic Silver / Crimson Red", "Dark Void Purple / Electric Green"];
+        var interiorColors = ["Starlight White / Holographic Accents", "Midnight Blue / Silver Trim", "Nebula Pink / Black Highlights"];
+    } else if (manufacturer === "Luminaris") {
+        var exteriorColors = ["Heavenly Blue / Gold Leaf", "Comet White / Silver", "Angelic Ivory", "Celestial Green / Bronze", "Slate Gray", "Sunrise Orange"];
+        var interiorColors = ["Warm Wood / Brass", "Rose Red / Cream Leather", "Deep Maroons and Soft Gold", "Stone Texture", "Reflective Silver"];
+    } else if (manufacturer === "Solo Space Ventures") {
+        var exteriorColors = ["Red Mars", "Cosmic Blue", "Starlight White", "Aurora Green", "Comet Yellow", "Deep Space Noir", "Solar Flare Gold", "Cosmic Violet", "Terraform Teal"];
+        var interiorColors = ["Eclipse Black / Solar Silver", "Nebula Gray", "Satellite Silver / Void Black", "Stratosphere Blue / Meteorite Metallic", "Nebular Navy", "Horizon Pink", "Moondust White"];
+    } else if (manufacturer === "Nebino and Co") {
+        var exteriorColors = ["Stellar Silver", "Midnight Nebula", "Galactic Gold", "Sovereign Sapphire", "Industrial Onyx", "Roma Red", "Durable Driftwood", "Explorer Azure", "Tactical Titanium"];
+        var interiorColors = ["Tuscan Sun", "Venetian Crimson", "Milanese Mocha", "Functional Charcoal", "Capri Cream", "Pisa Pewter", "Renaissance Rose", "Command Crimson"];
+    } else if (manufacturer === "Galactigon") {
+        var exteriorColors = ["Imperial Red / Gold", "Silk White / Azure Blue", "Obsidian Black / Crimson Red", "Celestial Silver / Sky Blue", "Emperor Yellow / Phoenix Feather"];
+        var interiorColors = ["Jade Green / Ebony Black", "Terracotta / Silk Ivory", "Gunmetal Grey / Dragon Scale", "Bamboo Green / Cloud White", "Imperial Porcelain / Black Lacquer"];
+    }
+
+    // Populate exterior colors select options
+    exteriorColors.forEach(function(color) {
+        var option = document.createElement("option");
+        option.text = color;
+        exteriorColorsSelect.add(option);
+    });
+
+    // Populate interior colors select options
+    interiorColors.forEach(function(color) {
+        var option = document.createElement("option");
+        option.text = color;
+        interiorColorsSelect.add(option);
+    });
+}
+
+
+    </script>
+</head>
+<body>
+    <nav>
+        <div id="company-logo"><img src="/images/isrlogo.png" alt="ISR"></div>
+        <div><a href="/">Home</a></div>
+        <div><a href="/register">Register</a></div>
+        <div><a href="/makes">Manufacturers</a></div>
+        <div><a href="/ships/search">Search</a></div>
+        <div><a href="/users">Users</a></div>
+        <div><a href="/wishlist">Wishlist</a></div>
+    </nav>
+    <main>
+
+        <h1 id="page-header">#sub-title#</h1>
+
+<section>
+<form id="shipForm" onsubmit="submitForm(event)">
+    <label for="name">Ship Name:</label>
+    <input type="text" id="ship-name" name="ship-name" required>
+    <label for="manufacturer">Manufacturer:</label>
+    <select id="manufacturer" onchange="populateModels(); populateColors();">
+    <option value="Vorpyxion">Vorpyxion</option>
+    <option value="Quasitrek">Quasitrek</option>
+    <option value="Nebulairix">Nebulairix</option>
+    <option value="Galaxior">Galaxior</option>
+    <option value="Astrodyne">Astrodyne</option>
+    <option value="Satelynx">Satelynx</option>
+    <option value="Starquanta">Starquanta</option>
+    <option value="Voidenix">Voidenix</option>
+    <option value="Stellex">Stellex</option>
+    <option value="Eclipsogen">Eclipsogen</option>
+    <option value="Ether Machines Co (EMC)">Ether Machines Co (EMC)</option>
+    <option value="Quantarion">Quantarion</option>
+    <option value="Xenopulse">Xenopulse</option>
+    <option value="Luminaris">Luminaris</option>
+    <option value="Solo Space Ventures">Solo Space Ventures</option>
+    <option value="Nebino and Co">Nebino and Co</option>
+    <option value="Galactigon">Galactigon</option>
+  </select><br><br>
+
+  <label for="models">Model:</label>
+  <select id="models">
+    <!-- Models will be dynamically populated here -->
+  </select><br><br>
+
+  <label for="exterior-colors">Exterior Color:</label>
+  <select id="exterior-colors">
+    <!-- Exterior colors will be dynamically populated here -->
+  </select><br><br>
+
+  <label for="interior-colors">Interior Color:</label>
+  <select id="interior-colors">
+    <!-- Interior colors will be dynamically populated here -->
+  </select><br><br>
+    <input type="hidden" name="_method" value="PATCH">
+  <input type="submit" value="Submit">
+</form>
+</section>
+
+    </main>
+    
+<script>
+    var currentUrl = window.location.href;
+    document.getElementById("shipForm").action = currentUrl;
+
+  function submitForm(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Fetch the form data
+    const formData = new FormData(document.getElementById("shipForm"));
+
+    // Fetch the current URL
+    const currentUrl = window.location.href;
+
+    // Send a PATCH request
+    fetch(currentUrl, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(Object.fromEntries(formData)),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        // Handle success response
+        console.log(data);
+        // Optionally, redirect or perform other actions upon success
+      })
+      .catch((error) => {
+        // Handle error
+        console.error("Error:", error);
+      });
+  }
+
+</script>
+</body>
+</html>
