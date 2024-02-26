@@ -1,5 +1,3 @@
-Sure, here's a basic template for your README.md file for your ISR project:
-
 # Intergalactic Ship Registry (ISR) Project (SBA 318)
 
 ## Introduction
