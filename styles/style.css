@@ -119,6 +119,8 @@ form button{
 }
 #wishlist-page-section li{
     margin-bottom: 50px;
+    display: flex;
+    align-items: center;
 }
 #wishlist-page-section button{
     background-color: red;
@@ -127,4 +129,7 @@ form button{
 }
 #wishlist-page-section button:hover{
     background-color: rgb(174, 0, 0);
+}
+#wishlist-page-section img{
+    width:100px;
 }

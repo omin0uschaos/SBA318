@@ -22,7 +22,7 @@ router.get("/", (req, res) => {
                 const dateTimeAdded = item.timestamp || "";
 
                 return `
-                    <li>
+                    <li><a href="/makes/${manufacturer.toLowerCase()}"><img src="./images/ships/${manufacturer.toLowerCase()}/${model}.png" alt="${model}"></a>
                         ${manufacturer} - ${model} (${dateTimeAdded})
                         <form action="/wishlist/${index}?_method=DELETE" method="POST">
                         <input type="hidden" name="_method" value="DELETE"> <!-- Method override -->
@@ -35,7 +35,8 @@ router.get("/", (req, res) => {
             const options = {
                 title: "Wishlist",
                 subTitle: "Items in Wishlist",
-                content: `<ul>${wishlistItems.join('')}</ul>` // Join wishlist items into a single string
+                // Join wishlist items into a single string
+                content: `<ul>${wishlistItems.join('')}</ul>` 
             };
 
             res.render("wishlist", options);

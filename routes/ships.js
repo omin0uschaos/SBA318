@@ -7,7 +7,7 @@ const ships = require("../data/ships");
 router.get("/search", (req, res) => {
     // Render only the search form initially
     const options = {
-        title: "Ship Search",
+        title: "Owned Ship Search",
         subTitle: "Search for Ships",
         content: `
             <h2>Ship Search</h2>
@@ -27,7 +27,7 @@ router.get("/search/results", (req, res) => {
     // If no search term provided, render search form again
     if (!searchTerm) {
         const options = {
-            title: "Ship Search",
+            title: "Owned Ship Search",
             subTitle: "Search for Ships",
             content: `
                 <h2>Ship Search</h2>
