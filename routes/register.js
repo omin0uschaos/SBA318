@@ -68,6 +68,7 @@ router.get("/", (req, res) => {
         name,
         username,
         password: bcrypt.hashSync(password, 10),
+        licenseId,
         shipsOwned: [],
     };
 

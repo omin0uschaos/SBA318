@@ -24,10 +24,10 @@ router.get("/", (req, res) => {
         });
 
         const htmlContent = userList.map(user => {
-            return `<div>
+            return `<div><a href="/users/${user.licenseId}">
                         <p>Name: ${user.name}</p>
                         <p>License ID: ${user.licenseId}</p>
-                        <p>Ships Owned: ${user.shipsOwned}</p><br><br>
+                        <p>Ships Owned: ${user.shipsOwned}</p></a><br><br>
                     </div>`;
         }).join('');
 
@@ -69,8 +69,6 @@ router.get("/:userId", (req, res) => {
                 <h2>User Information</h2>
                 <p>Name: ${name}</p>
                 <p>License ID: ${licenseId}</p>
-                <p>Email: ${email}</p>
-                <p>Address: ${address}</p>
                 <p>Ships Owned: ${shipsOwned}</p>
             `
         };

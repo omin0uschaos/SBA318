@@ -10,10 +10,11 @@
     <nav>
         <div id="company-logo"><img src="../images/isrlogo.png" alt="ISR"></div>
         <div><a href="/">Home</a></div>
-        <div><a href="/register">Register User</a></div>
-        <div><a href="/makes">Make List</a></div>
-        <div><a href="/ships/search">Ship Search</a></div>
-        <div><a href="/users">User List</a></div>
+        <div><a href="/register">Register</a></div>
+        <div><a href="/makes">Manufacturers</a></div>
+        <div><a href="/ships/search">Search</a></div>
+        <div><a href="/users">Users</a></div>
+        <div><a href="/wishlist">Wishlist</a></div>
     </nav>
     <main>
 

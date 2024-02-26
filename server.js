@@ -1,13 +1,14 @@
 const express = require('express');
 const bodyParser = require("body-parser");
 const bcrypt = require("bcrypt")
+const methodOverride = require('method-override');
 const fs = require('fs');
 const usersRouter = require("./routes/users");
 const registerRouter = require("./routes/register");
 const loginRouter = require("./routes/login");
 const shipsRouter = require("./routes/ships");
 const makesRouter = require("./routes/makes");
-const adminRouter = require("./routes/admin");
+const wishlistRouter = require("./routes/wishlist");
 const session = require("express-session");
 
 const app = express();
@@ -52,7 +53,7 @@ app.use("/ships", shipsRouter);
 app.use("/register", registerRouter);
 app.use("/login", loginRouter);
 app.use("/makes", makesRouter);
-app.use("/admin", adminRouter);
+app.use("/wishlist", wishlistRouter);
 
 app.get('/', (req, res)=>{
     const options = {

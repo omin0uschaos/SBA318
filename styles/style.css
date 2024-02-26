@@ -79,7 +79,7 @@ form button{
 
 }
 
-#search-result-ul, #makes-page-div ul, #maker-page-div ul{
+#search-result-ul, #makes-page-div ul, #maker-page-div ul, #wishlist-page-section ul{
     list-style-type: none;
     padding:0;
 }
@@ -113,4 +113,18 @@ form button{
 }
 #maker-page-div li img{
     width: 250px;
+}
+#wishlist-page-section form{
+    display: inline;
+}
+#wishlist-page-section li{
+    margin-bottom: 50px;
+}
+#wishlist-page-section button{
+    background-color: red;
+    border-radius: 5px;
+    border: 0px;
+}
+#wishlist-page-section button:hover{
+    background-color: rgb(174, 0, 0);
 }

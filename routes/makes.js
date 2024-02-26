@@ -50,6 +50,11 @@ router.get("/:makeId", (req, res) => {
                 <li>
                     <img src="/images/ships/${makeId}/${model}.png" alt="${model} image">
                     ${model}
+                    <form action="/wishlist" method="POST">
+                        <input type="hidden" name="manufacturer" value="${make.manufacturerName}">
+                        <input type="hidden" name="model" value="${model}">
+                        <button type="submit">Add to Wishlist</button>
+                    </form>
                 </li>
             `).join('')}
         </ul>

@@ -15,7 +15,7 @@
       }
     ]
   },
-  "E0000001": {      
+  "E0000001": {
     "name": "John Smith",
     "username": "Johnsmith",
     "password": "$2b$10$ZAeveE9jZMappZqa3htHduFy1KQdqRplgrPJQR2SBXRcXWOC4XsEq",
@@ -29,7 +29,7 @@
         "shipName": "Falcon 8",
         "shipId": "uacfMFwmhn"
       }
-    ]  
+    ]
   },
   "E0000002": {
     "name": "Alice Trae",
@@ -174,6 +174,13 @@
     "username": "moose",
     "password": "$2b$10$Q6/IH.K.K5XjgIORb4oga.u4px0NfdlnQGE8zDSOQ15kANi5wlCCa",
     "licenseId": "W5372835",
+    "shipsOwned": []
+  },
+  "I8182045": {
+    "name": "Luna Lemon",
+    "username": "lunaLemon",
+    "password": "$2b$10$1gDqyvdFdSFVa05vauvnCe5nGo7.SVIBZY1vnWogHNrGEBsN.bIRq",
+    "licenseId": "I8182045",
     "shipsOwned": []
   }
 }
