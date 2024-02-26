@@ -1,12 +1,12 @@
 Sure, here's a basic template for your README.md file for your ISR project:
 
-# Interactive Ship Registry (ISR) Project
+# Intergalactic Ship Registry (ISR) Project (SBA 318)
 
 ## Introduction
-The Interactive Ship Registry (ISR) project is a web application designed to manage ship data, including ship details, ownership, and maintenance history. This project aims to provide a user-friendly interface for users to interact with ship registry data efficiently.
+The Intergalactic Ship Registry (ISR) project is a web application designed to manage ship data, including ship details, ownership, and maintenance history. This project aims to provide a user-friendly interface for users to interact with ship registry data efficiently.
 
 ## Features
-- **Ship Management**: Add, view, update, and delete ship records.
+- **Ship Management**: Add, view, update, and delete ship records. (WIP)
 - **User Management**: Manage user accounts, including registration and authentication.(WIP)
 - **Ship History**: Track and display the maintenance history of each ship.
 - **Search and Filter**: Search for ships based on various criteria and filter results.
