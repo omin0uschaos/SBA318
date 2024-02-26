@@ -224,7 +224,7 @@ function populateColors() {
       .then((data) => {
         // Handle success response
         console.log(data);
-        // Optionally, redirect or perform other actions upon success
+
       })
       .catch((error) => {
         // Handle error
