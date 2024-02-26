@@ -46,8 +46,13 @@ router.get("/:makeId", (req, res) => {
             </div>
             <h3>Models:</h3>
             <ul>
-                ${make.models.map(model => `<li>${model}</li>`).join('')}
-            </ul>
+            ${make.models.map(model => `
+                <li>
+                    <img src="/images/ships/${makeId}/${model}.png" alt="${model} image">
+                    ${model}
+                </li>
+            `).join('')}
+        </ul>
             <h3>Exterior Colors:</h3>
             <ul>
                 ${make.extColors.map(color => `<li>${color}</li>`).join('')}

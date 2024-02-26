@@ -58,7 +58,7 @@
       "voidenix": {
         "manufacturerName": "Voidenix",
         "location": "C-721",
-        "models": ["Nexa", "Orion", "Quasar", "Galactic", "Astro-Hauler", "Surveyor", "Pulse"],
+        "models": ["Nexa", "Orion", "Galactic", "Astro-Hauler", "Surveyor", "Pulse"],
         "extColors": ["Cosmic Black / Nebula Pink", "Asteroid Gray / Comet Red", "Solar Flare Orange / Deep Space Blue", "Quantum Silver / Eclipse Purple"],
         "intColors": ["Stardust White / Meteorite Brown", "Galactic Green / Black Hole Black", "Supernova Yellow / Dark Matter Gray"],
         "description": "Voidenix emerges from the depths of the cosmos as a pioneering spaceship manufacturer, stationed on the enigmatic asteroid C-721, nestled in the asteroid belt between Mars and Jupiter. This strategic location harnesses the raw materials and unique gravitational forces essential for crafting the universe's most resilient and innovative vessels. Voidenix stands as a beacon of technological advancement and cosmic exploration, dedicated to pushing the boundaries of space travel through unparalleled engineering and design."

@@ -93,7 +93,7 @@ form button{
 #makes-page-div{
     text-align: center;
 }
-#makes-page-div li{
+#makes-page-div li, #maker-page-div li{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,4 +107,10 @@ form button{
 }
 .make-info{
     text-align: justify;
+}
+#maker-page-div li{
+    margin-bottom: 20px;
+}
+#maker-page-div li img{
+    width: 250px;
 }
