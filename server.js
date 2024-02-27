@@ -9,6 +9,11 @@ const loginRouter = require("./routes/login");
 const shipsRouter = require("./routes/ships");
 const makesRouter = require("./routes/makes");
 const wishlistRouter = require("./routes/wishlist");
+const loggingMiddleware = require('./middlewares/logging');
+
+const errorHandler = require('./utilities/errorHandler');
+
+
 const session = require("express-session");
 
 
@@ -16,12 +21,11 @@ const session = require("express-session");
 const app = express();
 let PORT = 3000
 
-
 // Parsing Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ extended: true }));
 
-//attempted to set up session for login, unfortunately was not able to implement
+//attempted to set up session for login, unfortunately was not able to implement 
 app.use(session({
     secret: "spacemen-never-die",
     resave: false,
@@ -33,6 +37,7 @@ app.use(express.static(__dirname + "/styles"));
 app.use('/images', express.static('images'));
 app.use(express.urlencoded({ extended: true }));
 
+app.use(loggingMiddleware);
 
 app.engine("europa", (filePath, options, callback) =>{
     fs.readFile(filePath, (err, content) =>{
@@ -58,6 +63,7 @@ app.use("/login", loginRouter);
 app.use("/makes", makesRouter);
 app.use("/wishlist", wishlistRouter);
 
+
 app.get('/', (req, res)=>{
     const options = {
         homelink:"/",
@@ -69,7 +75,10 @@ app.get('/', (req, res)=>{
     res.render("index", options);
 })
 
+// Error handling middleware
+app.use(errorHandler);
 
+// Start the server
 app.listen(PORT, ()=>{
     console.log(`Server listening on port ${PORT}`);
 })
