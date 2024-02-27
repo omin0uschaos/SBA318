@@ -86,7 +86,10 @@ form button{
     padding: 5px 20px;
     border-radius: 3px;
     border: 0px ;
-
+    transition-duration: 500ms;
+}
+form button:hover{
+    background-color: rgba(231, 231, 231, 0.808);
 }
 
 #search-result-ul, #makes-page-div ul, #maker-page-div ul, #wishlist-page-section ul{
@@ -131,6 +134,10 @@ form button{
     margin-bottom: 50px;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+#wishlist-page-section span{
+    margin: 0 20px;
 }
 #wishlist-page-section button{
     background-color: red;
@@ -159,9 +166,14 @@ form button{
     margin-right: 10px;
     margin-bottom: 10px;
     transition-duration: 500ms;
+    padding:20px;
 }
 #user-page-section div:hover{
     background-color: rgba(250, 235, 215, 0.434);
+}
+
+#user-page-section div a{
+    color: black;
 }
 
 #ships-page-section, #results-page-section{

@@ -23,7 +23,7 @@ router.get("/", (req, res) => {
 
                 return `
                     <li><a href="/makes/${manufacturer.toLowerCase()}"><img src="./images/ships/${manufacturer.toLowerCase()}/${model}.png" alt="${model}"></a>
-                        ${manufacturer} - ${model} (${dateTimeAdded})
+                        <span>${manufacturer} - ${model} (${dateTimeAdded})</span>
                         <form action="/wishlist/${index}?_method=DELETE" method="POST">
                         <input type="hidden" name="_method" value="DELETE"> <!-- Method override -->
                         <button type="submit">Delete</button>

@@ -27,7 +27,7 @@ router.get("/", (req, res) => {
             return `<div><a href="/users/${user.licenseId}">
                         <p>Name: ${user.name}</p>
                         <p>License ID: ${user.licenseId}</p>
-                        <p>Ships Owned: ${user.shipsOwned}</p></a><br><br><hr>
+                        <p>Ships Owned: ${user.shipsOwned}</p></a>
                     </div>`;
         }).join('');
 
