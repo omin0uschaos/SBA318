@@ -18,9 +18,10 @@
     </nav>
     <main>
 
-        <h1 id="page-header">#sub-title#</h1>
+        <h1 id="page-header" class="index-page-header">#sub-title#</h1>
 
-  <section>
+  <section id="index-page-section">
+        <h1>Welcome to the Intergalactic Ship Registry (ISR)</h1>
         <h4>Mission Statement:</h4>
         <p>The Intergalactic Ship Registry (ISR) is dedicated to pioneering the frontier of space navigation and ownership. Our mission is to facilitate seamless interstellar travel, uphold the highest standards of spacecraft registration, and ensure safe, lawful, and efficient operation throughout the cosmos.</p>
 

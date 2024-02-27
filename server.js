@@ -21,6 +21,7 @@ let PORT = 3000
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ extended: true }));
 
+//attempted to set up session for login, unfortunately was not able to implement
 app.use(session({
     secret: "spacemen-never-die",
     resave: false,
@@ -62,8 +63,8 @@ app.get('/', (req, res)=>{
         homelink:"/",
         contactlink:"/contact",
         title: "Intergalactic Ship Registry",
-        subTitle: "Welcome to the Intergalactic Ship Registry (ISR)",
-        content: `Welcome to the Intergalactic Ship Registry (ISR) <br /><br />`
+        subTitle: `<img id="isrtext-logo" src="/images/isrtext.svg"><br><hr>INTERGALACTIC SHIP REGISTRY`,
+        content: ` <br /><br />`
     };
     res.render("index", options);
 })

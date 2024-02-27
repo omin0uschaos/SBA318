@@ -20,6 +20,8 @@ nav a{
     text-decoration: none;
     color: beige;
     transition-duration: 1s;
+    margin-top: -8px;
+    margin-left: -50px;
 }
 nav a:hover{
     color: rgb(193, 130, 252);
@@ -42,6 +44,16 @@ width: 100px;
     padding: 50px;
     text-align: center;
 }
+.index-page-header h1{
+    letter-spacing: 3px;
+    
+}
+.index-page-header hr{
+    max-width: 600px;
+    border-color: black;
+    height: 10px;
+    background-color: black;
+}
 section{
     background: rgba(255, 255, 255, 0.07);
     border-radius: 16px;
@@ -51,7 +63,12 @@ section{
     border: 2px solid rgba(255, 255, 255, 0.26);
     padding: 50px;
 }
-
+#index-page-section h1{
+    text-align: center;
+}
+#isrtext-logo{
+    max-width: 500px;
+}
 #user-registration-form, #login-form{
     text-align: center;
 }
