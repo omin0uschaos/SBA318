@@ -65,7 +65,7 @@
         "model": "Orbitron-OX",
         "year": 2610,
         "color": "Galactic Green",
-        "usage": "Exploration"
+        "usage": "Trade"
       }
     ],
     "registryData": {
@@ -148,7 +148,7 @@
         "year": 2610,
         "extColor": "Imperial Red",
         "intColor": "Jade Green",
-        "usage": "Exploration"
+        "usage": "Business"
       }
     ],
     "registryData": {
@@ -324,24 +324,122 @@
       }
     ]
   },
-  "uiymx25ybw": {
-    "shipName": "Dago",
-    "shipId": "uiymx25ybw",
+  "lnuou4dzdh": {
+    "shipName": "Milhouse",
+    "shipId": "lnuou4dzdh",
     "shipInfo": [
       {
-        "make": "Eclipsogen",
-        "model": "Leap",
-        "extColor": "Black Hole Black / Stellar Gold",
-        "intColor": "Sanitized Silver / Pulse Purple"
+        "make": "Galaxior",
+        "model": "Drifter",
+        "extColor": "Dark Matter Black",
+        "intColor": "Quantum Red",
+        "usage": "Research"
       }
     ],
     "registryData": {
-      "regPlate": "63ZZA5R6J70Q",
+      "regPlate": "FQ8U05426X5R",
       "issuedYear": 2024,
       "expiration": 2029,
       "status": "active"
     },
     "ownerInfo": {
+      "name": "Moose",
+      "ownerId": "W5372835"
+    },
+    "history": []
+  },
+  "0jbpq2jn0l": {
+    "shipName": "Lockehart",
+    "shipId": "0jbpq2jn0l",
+    "shipInfo": [
+      {
+        "make": "Nebino and Co",
+        "model": "Vita",
+        "extColor": "Stellar Silver",
+        "intColor": "Tuscan Sun",
+        "usage": "Courier"
+      }
+    ],
+    "registryData": {
+      "regPlate": "MZRRZLXZ281K",
+      "issuedYear": 2024,
+      "expiration": 2029,
+      "status": "active"
+    },
+    "ownerInfo": {
+      "name": "Ewan Knowles",
+      "ownerId": "D2107279"
+    },
+    "history": []
+  },
+  "ehq8l7sjey": {
+    "shipName": "Blaster",
+    "shipId": "ehq8l7sjey",
+    "shipInfo": [
+      {
+        "make": "Galactigon",
+        "model": "Guardian",
+        "extColor": "Obsidian Black / Crimson Red",
+        "intColor": "Gunmetal Grey / Dragon Scale",
+        "usage": "Defense"
+      }
+    ],
+    "registryData": {
+      "regPlate": "4C28T5OOWX16",
+      "issuedYear": 2024,
+      "expiration": 2029,
+      "status": "active"
+    },
+    "ownerInfo": {
+      "name": "Luna Lemon",
+      "ownerId": "I8182045"
+    },
+    "history": []
+  },
+  "wkvqhn3s9r": {
+    "shipName": "ContrappL",
+    "shipId": "wkvqhn3s9r",
+    "shipInfo": [
+      {
+        "make": "Galaxior",
+        "model": "Drifter",
+        "extColor": "Supernova Silver",
+        "intColor": "Singularity Silver",
+        "usage": "Surveillance"
+      }
+    ],
+    "registryData": {
+      "regPlate": "3VN4466S39GA",
+      "issuedYear": 2024,
+      "expiration": 2029,
+      "status": "active"
+    },
+    "ownerInfo": {
+      "name": "Luna Lemon",
+      "ownerId": "I8182045"
+    },
+    "history": []
+  },
+  "m39boon79v": {
+    "shipName": "Odysseus",
+    "shipId": "m39boon79v",
+    "shipInfo": [
+      {
+        "make": "Starquanta",
+        "model": "Cutter",
+        "extColor": "Solar Flare Silver",
+        "intColor": "Quantum Quartz",
+        "usage": "Communication"
+      }
+    ],
+    "registryData": {
+      "regPlate": "V37NFL92GV5N",
+      "issuedYear": 2024,
+      "expiration": 2029,
+      "status": "active"
+    },
+    "ownerInfo": {
+      "name": "Moose",
       "ownerId": "W5372835"
     },
     "history": []

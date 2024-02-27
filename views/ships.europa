@@ -20,7 +20,7 @@
 
         <h1 id="page-header">#sub-title#</h1>
 
-<section>#content#</section>
+<section id="ships-page-section">#content#</section>
 
     </main>
     

@@ -27,7 +27,7 @@ router.get("/", (req, res) => {
             return `<div><a href="/users/${user.licenseId}">
                         <p>Name: ${user.name}</p>
                         <p>License ID: ${user.licenseId}</p>
-                        <p>Ships Owned: ${user.shipsOwned}</p></a><br><br>
+                        <p>Ships Owned: ${user.shipsOwned}</p></a><br><br><hr>
                     </div>`;
         }).join('');
 
@@ -81,7 +81,7 @@ router.get("/:userId/addship", (req, res) => {
     const userId = req.params.userId;
     const options = {
         title: `Add ship to - ${userId}`,
-        subTitle: `Add Ships to User ID: ${userId}`,
+        subTitle: `Add Ships to User ID: <a href="/users/${userId}">${userId}</a>`,
         content: `
         <h1>Add New Ship</h1>
         `
@@ -93,67 +93,69 @@ router.get("/:userId/addship", (req, res) => {
 // PATCH route to add the ship to ships.json and update users.json
 router.patch("/:userId/addship", (req, res) => {
     const userId = req.params.userId;
-    const { shipName, manufacturer, model, exteriorColor, interiorColor } = req.body;
+    const { shipName, manufacturer, model, exteriorColor, interiorColor, usage } = req.body;
 
     console.log("Form Data:", req.body);
     const shipId = generateShipId();
 
-    // Prepare ship data
-    const newShipData = {
-        shipName,
-        shipId,
-        shipInfo: [{
-            make: manufacturer,
-            model,
-            extColor: exteriorColor,
-            intColor: interiorColor
-        }],
-        registryData: {
-            regPlate: generateRegPlate(),
-            issuedYear: new Date().getFullYear(),
-            expiration: new Date().getFullYear() + 5,
-            status: "active"
-        },
-        ownerInfo: {
-            ownerId: userId
-        },
-        history: []
-    };
-
-    // Read ships.json
-    fs.readFile('./data/ships.json', 'utf8', (err, shipsData) => {
+    // Read users.json to get owner's name
+    fs.readFile('./data/users.json', 'utf8', (err, userData) => {
         if (err) {
             console.error(err);
             return res.status(500).send('Internal Server Error');
         }
 
-        // Parse ships data
-        let ships = JSON.parse(shipsData);
+        // Parse users data
+        const users = JSON.parse(userData);
 
-        // Add the new ship to the ships data
-        ships[shipId] = newShipData; // Assign new ship data
+        // Find user by ID
+        const user = users[userId];
+        if (!user) {
+            return res.status(404).send('User not found');
+        }
 
-        // Update ships.json
-        fs.writeFile("./data/ships.json", JSON.stringify(ships, null, 2), err => {
+        // Prepare ship data
+        const newShipData = {
+            shipName,
+            shipId,
+            shipInfo: [{
+                make: manufacturer,
+                model,
+                extColor: exteriorColor,
+                intColor: interiorColor,
+                usage
+            }],
+            registryData: {
+                regPlate: generateRegPlate(),
+                issuedYear: new Date().getFullYear(),
+                expiration: new Date().getFullYear() + 5,
+                status: "active"
+            },
+            ownerInfo: {
+                name: user.name,
+                ownerId: userId
+            },
+            history: []
+        };
+
+        // Read ships.json
+        fs.readFile('./data/ships.json', 'utf8', (err, shipsData) => {
             if (err) {
                 console.error(err);
-                return res.status(500).send("Error updating ships data");
+                return res.status(500).send('Internal Server Error');
             }
 
-            // Read users.json
-            fs.readFile('./data/users.json', 'utf8', (err, userData) => {
+            // Parse ships data
+            let ships = JSON.parse(shipsData);
+
+            // Add the new ship to the ships data
+            ships[shipId] = newShipData;
+
+            // Update ships.json
+            fs.writeFile("./data/ships.json", JSON.stringify(ships, null, 2), err => {
                 if (err) {
                     console.error(err);
-                    return res.status(500).send('Internal Server Error');
-                }
-
-                // Parse users data
-                let users = JSON.parse(userData);
-
-                // Find user by ID
-                const user = users[userId];
-                if (!user) {
-                    return res.status(404).send('User not found');
+                    return res.status(500).send("Error updating ships data");
                 }
 
                 // Add ship to user's shipsOwned array
@@ -173,6 +175,7 @@ router.patch("/:userId/addship", (req, res) => {
         });
     });
 });
+
 
 
 

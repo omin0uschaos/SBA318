@@ -215,53 +215,54 @@ function populateColors() {
     let currentUrl = window.location.href + "?_method=PATCH";
     document.getElementById("shipForm").action = currentUrl;
 
-    function submitForm(event) {
-        event.preventDefault(); // Prevent default form submission
+function submitForm(event) {
     
-        // Get form input values
-        const shipName = document.getElementById("ship-name").value;
-        const manufacturer = document.getElementById("manufacturer").value;
-        const model = document.getElementById("models").value;
-        const exteriorColor = document.getElementById("exterior-colors").value;
-        const interiorColor = document.getElementById("interior-colors").value;
-        const usage = document.getElementById("usage").value;
+    // Get form input values
+    const shipName = document.getElementById("ship-name").value;
+    const manufacturer = document.getElementById("manufacturer").value;
+    const model = document.getElementById("models").value;
+    const exteriorColor = document.getElementById("exterior-colors").value;
+    const interiorColor = document.getElementById("interior-colors").value;
+    const usage = document.getElementById("usage").value;
     
-        // Construct the request body
-        const requestBody = {
-            shipName,
-            manufacturer,
-            model,
-            exteriorColor,
-            interiorColor,
-            usage
-        };
+    // Construct the request body
+    const requestBody = {
+        shipName,
+        manufacturer,
+        model,
+        exteriorColor,
+        interiorColor,
+        usage
+    };
     
-        // Fetch the current URL
-        const currentUrl = window.location.href;
-    
-        // Send a PATCH request
-        fetch(currentUrl, {
-            method: "PATCH",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(requestBody),
-        })
-        .then((response) => {
-            if (!response.ok) {
-                throw new Error("Network response was not ok");
-            }
-            return response.json();
-        })
-        .then((data) => {
-            // Handle success response
-            console.log(data);
-        })
-        .catch((error) => {
-            // Handle error
-            console.error("Error:", error);
-        });
-    }
+    // Fetch the current URL
+    const currentUrl = window.location.href;
+
+    // Send a PATCH request
+    fetch(currentUrl, {
+        method: "PATCH",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(requestBody),
+    })
+    .then((response) => {
+        if (!response.ok) {
+            throw new Error("Network response was not ok");
+        }
+        return response.json();
+    })
+    .then((data) => {
+        // Log the response data
+        console.log("Response data:", data);
+    })
+    .catch((error) => {
+        // Handle error
+        console.error("Error:", error);
+        // Log error details
+        console.error("Error details:", error.message);
+    });
+}
 
 
 </script>

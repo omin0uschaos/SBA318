@@ -70,6 +70,16 @@ section{
 .form-group input{
     width: 200px;
     padding: 5px;
+    background-color: rgba(255, 255, 255, 0.459);
+    border:0;
+    border-radius: 5px; 
+    margin-bottom: 5px;
+    transition-duration: 500ms;
+}
+
+.form-group input:hover{
+    background-color: rgba(255, 255, 255, 0.676);
+
 }
 
 form button{
@@ -126,10 +136,53 @@ form button{
     background-color: red;
     border-radius: 5px;
     border: 0px;
+    transition-duration: 500ms;
 }
 #wishlist-page-section button:hover{
     background-color: rgb(174, 0, 0);
 }
 #wishlist-page-section img{
     width:100px;
+}
+#user-page-section{
+    text-align: center;
+}
+#user-page-section hr{
+    border-color: rgba(255, 255, 255, 0.274);
+    width:200px;
+}
+#user-page-section div{
+    display: inline-block;
+    background-color: rgba(250, 235, 215, 0.249);
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.646);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition-duration: 500ms;
+}
+#user-page-section div:hover{
+    background-color: rgba(250, 235, 215, 0.434);
+}
+
+#ships-page-section, #results-page-section{
+    text-align: center;
+}
+
+#results-page-section ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#ships-page-section input{
+    padding: 5px;
+    width:200px;
+    background-color: rgba(255, 255, 255, 0.459);
+    border:0;
+    border-radius: 5px;
+    transition-duration: 500ms;
+}
+#ships-page-section input:hover{
+    background-color: rgba(255, 255, 255, 0.676);
 }

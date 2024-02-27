@@ -63,6 +63,9 @@
     "shipsOwned": [
       {
         "shipId": "q41my9cqdx"
+      },
+      {
+        "shipId": "0jbpq2jn0l"
       }
     ]
   },
@@ -172,7 +175,10 @@
     "licenseId": "W5372835",
     "shipsOwned": [
       {
-        "shipId": "uiymx25ybw"
+        "shipId": "lnuou4dzdh"
+      },
+      {
+        "shipId": "m39boon79v"
       }
     ]
   },
@@ -181,6 +187,27 @@
     "username": "lunaLemon",
     "password": "$2b$10$1gDqyvdFdSFVa05vauvnCe5nGo7.SVIBZY1vnWogHNrGEBsN.bIRq",
     "licenseId": "I8182045",
+    "shipsOwned": [
+      {
+        "shipId": "ehq8l7sjey"
+      },
+      {
+        "shipId": "wkvqhn3s9r"
+      }
+    ]
+  },
+  "Y9157721": {
+    "name": "Barney Williams",
+    "username": "barnwilliam",
+    "password": "$2b$10$kjncZqefa2uNFpXudhWJxesdNRlmf89dY6BZBcre5MH5/LeKTakSC",
+    "licenseId": "Y9157721",
+    "shipsOwned": []
+  },
+  "T3146942": {
+    "name": "Jerry Seinfeld",
+    "username": "jerrys",
+    "password": "$2b$10$cMTwc5NJq0hAy4TJsEd7dep6ih4Lq7vta2pOQcDUnnAuPyYWhpSY6",
+    "licenseId": "T3146942",
     "shipsOwned": []
   }
 }

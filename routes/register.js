@@ -51,7 +51,7 @@ router.get("/", (req, res) => {
     const { username, name, password, confirmPassword } = req.body;
 
     // Check if username already exists
-    if (users.hasOwnProperty(username)) {
+    if (Object.values(users).some(user => user.username === username)) {
         return res.status(400).send('Username already exists');
     }
 
@@ -87,6 +87,7 @@ router.get("/", (req, res) => {
             subTitle: `Account created`,
             content: `<div id="user-registration-form">
                         <h2>User registered successfully</h2>
+                        <h4>(Check <a href="/users">Users page</a> to see your account on the list. Login functionality still a Work In Progress)</h4>
             `
         };
         res.render("register", options);
