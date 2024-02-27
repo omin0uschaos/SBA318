@@ -45,25 +45,25 @@ router.get("/:makeId", (req, res) => {
                 <p><strong>Description:</strong> ${make.description}</p>
             </div>
             <h3>Models:</h3>
-            <ul>
+            <ul id="make-models-ul">
             ${make.models.map(model => `
                 <li>
                     <img src="/images/ships/${makeId}/${model}.png" alt="${model} image">
                     ${model}
                     <form action="/wishlist" method="POST">
                         <input type="hidden" name="manufacturer" value="${make.manufacturerName}">
-                        <input type="hidden" name="model" value="${model}">
+                        <input type="hidden" name="model" value="${model}"><br>
                         <button type="submit">Add to Wishlist</button>
                     </form>
                 </li>
             `).join('')}
         </ul>
             <h3>Exterior Colors:</h3>
-            <ul>
+            <ul id="ext-colors-ul">
                 ${make.extColors.map(color => `<li>${color}</li>`).join('')}
             </ul>
             <h3>Interior Colors:</h3>
-            <ul>
+            <ul id="int-colors-ul">
                 ${make.intColors.map(color => `<li>${color}</li>`).join('')}
             </ul>
             </div>

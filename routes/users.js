@@ -69,8 +69,8 @@ router.get("/:userId", (req, res) => {
                 <h2>User Information</h2>
                 <p>Name: ${name}</p>
                 <p>License ID: ${licenseId}</p>
-                <p>Ships Owned: ${shipsOwned}</p>
-                <a href="/users/${licenseId}/addship">Add Ships</a>
+                <p>Ships Owned: ${shipsOwned}</p><br>
+                <a id="user-page-add" href="/users/${licenseId}/addship">Add Ships</a>
             `
         };
         res.render("users", options);
@@ -81,7 +81,7 @@ router.get("/:userId/addship", (req, res) => {
     const userId = req.params.userId;
     const options = {
         title: `Add ship to - ${userId}`,
-        subTitle: `Add Ships to User ID: <a href="/users/${userId}">${userId}</a>`,
+        subTitle: `Add Ships to User ID: <a id="user-page-link" href="/users/${userId}">${userId}</a>`,
         content: `
         <h1>Add New Ship</h1>
         `
