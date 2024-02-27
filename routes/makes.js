@@ -17,8 +17,8 @@ router.get("/", (req, res) => {
         subTitle: "Ship Manufacturers Master List",
         content: `
             <div id="makes-page-div">
-                <h2>Makes</h2>
-                ${html}
+                <h2>Makes</h2><hr>
+                <div id="makes-logos-div">${html}</div>
             </div>
         `
     };

@@ -3,6 +3,7 @@ body{
     background-image: url("../images/deep_space.jpg");
     background-size:auto;
     background-attachment: fixed;
+    font-family: sans-serif;
 }
 
 nav{
@@ -60,6 +61,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5px;
 }
 
 .form-group label{
@@ -73,7 +75,6 @@ section{
     background-color: rgba(255, 255, 255, 0.459);
     border:0;
     border-radius: 5px; 
-    margin-bottom: 5px;
     transition-duration: 500ms;
 }
 
@@ -102,6 +103,19 @@ form button:hover{
 
 #makes-page-div img{
     width: 300px;
+    transition-duration: 500ms;
+    border-radius: 10px;
+}
+#makes-page-div img:hover{
+    filter: brightness(130%);
+}
+#makes-page-div hr{
+    border-color: rgba(255, 255, 255, 0.224);
+}
+
+#makes-page-div a{
+    color: black;
+    text-decoration: none;
 }
 #makes-page-div{
     text-align: center;
@@ -117,6 +131,12 @@ form button:hover{
 }
 #maker-page-div img{
     width: 400px;
+}
+#makes-logos-div ul{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
 }
 .make-info{
     text-align: justify;
