@@ -154,83 +154,115 @@ function populateColors() {
     <input type="text" id="ship-name" name="ship-name" required>
     <label for="manufacturer">Manufacturer:</label>
     <select id="manufacturer" onchange="populateModels(); populateColors();">
-    <option value="Vorpyxion">Vorpyxion</option>
-    <option value="Quasitrek">Quasitrek</option>
-    <option value="Nebulairix">Nebulairix</option>
-    <option value="Galaxior">Galaxior</option>
-    <option value="Astrodyne">Astrodyne</option>
-    <option value="Satelynx">Satelynx</option>
-    <option value="Starquanta">Starquanta</option>
-    <option value="Voidenix">Voidenix</option>
-    <option value="Stellex">Stellex</option>
-    <option value="Eclipsogen">Eclipsogen</option>
-    <option value="Ether Machines Co (EMC)">Ether Machines Co (EMC)</option>
-    <option value="Quantarion">Quantarion</option>
-    <option value="Xenopulse">Xenopulse</option>
-    <option value="Luminaris">Luminaris</option>
-    <option value="Solo Space Ventures">Solo Space Ventures</option>
-    <option value="Nebino and Co">Nebino and Co</option>
-    <option value="Galactigon">Galactigon</option>
-  </select><br><br>
+        <option value="Vorpyxion">Vorpyxion</option>
+        <option value="Quasitrek">Quasitrek</option>
+        <option value="Nebulairix">Nebulairix</option>
+        <option value="Galaxior">Galaxior</option>
+        <option value="Astrodyne">Astrodyne</option>
+        <option value="Satelynx">Satelynx</option>
+        <option value="Starquanta">Starquanta</option>
+        <option value="Voidenix">Voidenix</option>
+        <option value="Stellex">Stellex</option>
+        <option value="Eclipsogen">Eclipsogen</option>
+        <option value="Ether Machines Co (EMC)">Ether Machines Co (EMC)</option>
+        <option value="Quantarion">Quantarion</option>
+        <option value="Xenopulse">Xenopulse</option>
+        <option value="Luminaris">Luminaris</option>
+        <option value="Solo Space Ventures">Solo Space Ventures</option>
+        <option value="Nebino and Co">Nebino and Co</option>
+        <option value="Galactigon">Galactigon</option>
+    </select><br><br>
 
-  <label for="models">Model:</label>
-  <select id="models">
+    <label for="models">Model:</label>
+    <select id="models">
     <!-- Models will be dynamically populated here -->
-  </select><br><br>
+    </select><br><br>
 
-  <label for="exterior-colors">Exterior Color:</label>
-  <select id="exterior-colors">
+    <label for="exterior-colors">Exterior Color:</label>
+    <select id="exterior-colors">
     <!-- Exterior colors will be dynamically populated here -->
-  </select><br><br>
+    </select><br><br>
 
-  <label for="interior-colors">Interior Color:</label>
-  <select id="interior-colors">
+    <label for="interior-colors">Interior Color:</label>
+    <select id="interior-colors">
     <!-- Interior colors will be dynamically populated here -->
-  </select><br><br>
+    </select><br><br>
+    <label for="usage">Usage:</label>
+    <select id="usage">
+        <option value="Exploration">Exploration</option>
+        <option value="Transport">Transport</option>
+        <option value="Defense">Defense</option>
+        <option value="Research">Research</option>
+        <option value="Cargo">Cargo</option>
+        <option value="Surveillance">Surveillance</option>
+        <option value="Communication">Communication</option>
+        <option value="Colonization">Colonization</option>
+        <option value="Rescue">Rescue</option>
+        <option value="Diplomacy">Diplomacy</option>
+        <option value="Mining">Mining</option>
+        <option value="Trading">Trading</option>
+        <option value="Escort">Escort</option>
+        <option value="Courier">Courier</option>
+    </select><br><br>
     <input type="hidden" name="_method" value="PATCH">
-  <input type="submit" value="Submit">
+    <input type="submit" value="Submit">
 </form>
 </section>
 
     </main>
     
 <script>
-    var currentUrl = window.location.href;
+    let currentUrl = window.location.href + "?_method=PATCH";
     document.getElementById("shipForm").action = currentUrl;
 
-  function submitForm(event) {
-    event.preventDefault(); // Prevent default form submission
+    function submitForm(event) {
+        event.preventDefault(); // Prevent default form submission
+    
+        // Get form input values
+        const shipName = document.getElementById("ship-name").value;
+        const manufacturer = document.getElementById("manufacturer").value;
+        const model = document.getElementById("models").value;
+        const exteriorColor = document.getElementById("exterior-colors").value;
+        const interiorColor = document.getElementById("interior-colors").value;
+        const usage = document.getElementById("usage").value;
+    
+        // Construct the request body
+        const requestBody = {
+            shipName,
+            manufacturer,
+            model,
+            exteriorColor,
+            interiorColor,
+            usage
+        };
+    
+        // Fetch the current URL
+        const currentUrl = window.location.href;
+    
+        // Send a PATCH request
+        fetch(currentUrl, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(requestBody),
+        })
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+            return response.json();
+        })
+        .then((data) => {
+            // Handle success response
+            console.log(data);
+        })
+        .catch((error) => {
+            // Handle error
+            console.error("Error:", error);
+        });
+    }
 
-    // Fetch the form data
-    const formData = new FormData(document.getElementById("shipForm"));
-
-    // Fetch the current URL
-    const currentUrl = window.location.href;
-
-    // Send a PATCH request
-    fetch(currentUrl, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(Object.fromEntries(formData)),
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        // Handle success response
-        console.log(data);
-
-      })
-      .catch((error) => {
-        // Handle error
-        console.error("Error:", error);
-      });
-  }
 
 </script>
 </body>

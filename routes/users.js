@@ -95,6 +95,7 @@ router.patch("/:userId/addship", (req, res) => {
     const userId = req.params.userId;
     const { shipName, manufacturer, model, exteriorColor, interiorColor } = req.body;
 
+    console.log("Form Data:", req.body);
     const shipId = generateShipId();
 
     // Prepare ship data
@@ -172,6 +173,7 @@ router.patch("/:userId/addship", (req, res) => {
         });
     });
 });
+
 
 
 

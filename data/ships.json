@@ -324,13 +324,19 @@
       }
     ]
   },
-  "qkpik7aw8h": {
-    "shipId": "qkpik7aw8h",
+  "uiymx25ybw": {
+    "shipName": "Dago",
+    "shipId": "uiymx25ybw",
     "shipInfo": [
-      {}
+      {
+        "make": "Eclipsogen",
+        "model": "Leap",
+        "extColor": "Black Hole Black / Stellar Gold",
+        "intColor": "Sanitized Silver / Pulse Purple"
+      }
     ],
     "registryData": {
-      "regPlate": "T5E6N33D67G8",
+      "regPlate": "63ZZA5R6J70Q",
       "issuedYear": 2024,
       "expiration": 2029,
       "status": "active"
