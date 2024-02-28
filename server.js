@@ -9,7 +9,7 @@ const loginRouter = require("./routes/login");
 const shipsRouter = require("./routes/ships");
 const makesRouter = require("./routes/makes");
 const wishlistRouter = require("./routes/wishlist");
-const loggingMiddleware = require('./middlewares/logging');
+const loggingMiddleware = require('./middlewares/logger');
 
 const errorHandler = require('./utilities/errorHandler');
 
