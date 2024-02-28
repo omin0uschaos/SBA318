@@ -1,3 +1,4 @@
+//this page was created for the login functionality, unfortunately i was not able to get it to work, but leaving here to fix in the future.
 const express = require("express");
 const router = express.Router();
 const bcrypt = require('bcrypt');

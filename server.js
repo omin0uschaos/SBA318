@@ -25,7 +25,7 @@ let PORT = 3000
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ extended: true }));
 
-//attempted to set up session for login, unfortunately was not able to implement 
+//attempted to set up session middleware for login, unfortunately was not able to implement 
 app.use(session({
     secret: "spacemen-never-die",
     resave: false,
@@ -48,8 +48,6 @@ app.engine("europa", (filePath, options, callback) =>{
         .replaceAll("#title#", `${options.title}`)
         .replace('#sub-title#', `${options.subTitle}`)
         .replace('#content#', `${options.content}`)
-        .replace('#link4#', `${options.contactlink}`)
-        .replace("#link1#", `${options.homelink}`);
         return callback(null, rendered);
     });
 });
@@ -66,14 +64,17 @@ app.use("/wishlist", wishlistRouter);
 
 app.get('/', (req, res)=>{
     const options = {
-        homelink:"/",
-        contactlink:"/contact",
         title: "Intergalactic Ship Registry",
         subTitle: `<img id="isrtext-logo" src="/images/isrtext.svg"><br><hr>INTERGALACTIC SHIP REGISTRY`,
         content: ` <br /><br />`
     };
     res.render("index", options);
 })
+
+app.get('/test-error', (req, res, next) => {
+    // Intentionally throw an error
+    throw new Error('Test error');
+});
 
 // Error handling middleware
 app.use(errorHandler);

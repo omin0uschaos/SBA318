@@ -52,12 +52,22 @@ router.get("/", (req, res) => {
 
     // Check if username already exists
     if (Object.values(users).some(user => user.username === username)) {
-        return res.status(400).send('Username already exists');
+        const options = {
+            title: "Intergalactic Ship Registry",
+            subTitle: `Username Taken!`,
+            content: `Sorry, Username already exists! Go back and try a different username!`
+        };
+        return res.status(400).render("error", options);
     }
 
     // Check if passwords match
     if (password !== confirmPassword) {
-        return res.status(400).send('Passwords do not match');
+        const options = {
+            title: "Intergalactic Ship Registry",
+            subTitle: `Password  Error!`,
+            content: `Sorry, Passwords do not match!`
+        };
+        return res.status(400).render("error", options)
     }
 
     // Generate unique license ID

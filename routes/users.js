@@ -53,7 +53,12 @@ router.get("/:userId", (req, res) => {
         const user = usersData[userId];
         
         if (!user) {
-            return res.status(404).send('User not found');
+            const options = {
+                title: "Intergalactic Ship Registry",
+                subTitle: `Error!`,
+                content: `Sorry, User not found!`
+            };
+            return res.status(404).render("error", options);
         }
 
         const name = user.personData ? user.personData.name : user.name || "";
@@ -111,7 +116,12 @@ router.patch("/:userId/addship", (req, res) => {
         // Find user by ID
         const user = users[userId];
         if (!user) {
-            return res.status(404).send('User not found');
+            const options = {
+                title: "Intergalactic Ship Registry",
+                subTitle: `Error!`,
+                content: `Sorry, User not found!`
+            };
+            return res.status(404).render("error", options);
         }
 
         // Prepare ship data

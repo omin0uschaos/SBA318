@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#title#</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <nav>
+        <div id="company-logo"><img src="../images/isrlogo.png" alt="ISR"></div>
+        <div><a href="/">Home</a></div>
+        <div><a href="/register">Register</a></div>
+        <div><a href="/makes">Manufacturers</a></div>
+        <div><a href="/ships/search">Search</a></div>
+        <div><a href="/users">Users</a></div>
+        <div><a href="/wishlist">Wishlist</a></div>
+    </nav>
+    <main>
+
+        <h1 id="page-header">#sub-title#</h1>
+
+<section>#content#</section>
+
+    </main>
+    
+
+</body>
+</html>

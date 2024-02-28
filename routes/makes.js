@@ -29,9 +29,6 @@ router.get("/", (req, res) => {
 router.get("/:makeId", (req, res) => {
     const makeId = req.params.makeId;
     const make = makes[makeId];
-    if (!make) {
-        return res.status(404).send("Make not found");
-    }
 
     const options = {
         title: `${make.manufacturerName}`,
